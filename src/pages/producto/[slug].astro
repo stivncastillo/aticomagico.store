@@ -5,6 +5,7 @@ import Layout from "@/layouts/Layout.astro";
 import ProductCard from "@/components/ProductCard.astro";
 import { siteConfig } from "@/lib/config";
 import { buildWhatsAppLink, productWhatsAppMessage } from "@/lib/whatsapp";
+import AddToCartButton from "@/components/cart/AddToCartButton";
 
 export async function getStaticPaths() {
   const products = await getCollection("products");
@@ -81,6 +82,17 @@ const formatter = new Intl.NumberFormat(siteConfig.locale, {
         <p class="mt-3 text-xs text-ink-700">
           Al hacer clic se abre WhatsApp con un mensaje ya escrito para agilizar tu compra.
         </p>
+
+        <div class="mt-2 border-t border-black/5 pt-2">
+          <p class="mt-4 text-sm text-ink-700">
+            ¿Vas a pedir mas de un producto? Agregalo al carrito y cierra todo el pedido junto.
+          </p>
+          <AddToCartButton
+            client:load
+            product={{ slug: product.id, name: data.name, price: data.price, image: data.image, inStock: data.inStock }}
+            variant="full"
+          />
+        </div>
       </div>
     </div>
 

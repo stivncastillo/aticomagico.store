@@ -69,6 +69,34 @@ archivo se usa como URL (`/producto/<nombre-archivo>`), por ejemplo
 - `featured`: si es `true`, aparece en la seccion "Destacados" del inicio.
 - `inStock`: si es `false`, se muestra "Agotado" y se desactiva el boton de compra.
 
+## Carrito de compras (sin pasarela de pago)
+
+Cada producto se puede agregar a un carrito que vive en el `localStorage` del
+navegador (no hay backend ni base de datos): el boton redondo con el icono de
+bolsa agrega 1 unidad; en la pagina de producto hay ademas un selector de
+cantidad. El icono del carrito esta en el header (con un contador) y abre un
+panel lateral donde se puede ver, editar y vaciar el pedido.
+
+Al hacer clic en "Finalizar por WhatsApp" se arma un mensaje con el detalle
+completo (producto, cantidad y subtotal de cada uno, mas el total) y se abre
+WhatsApp con ese mensaje ya escrito, usando el mismo `PUBLIC_WHATSAPP_NUMBER`
+del `.env`. El carrito se vacia automaticamente despues de abrir WhatsApp.
+
+Importante: el carrito es **local a cada navegador/dispositivo** (no se
+sincroniza entre el celular y el computador de un cliente, ni tu lo ves de tu
+lado hasta que llega el mensaje). Sigue siendo un flujo manual: tu confirmas
+disponibilidad y cierras la venta por chat, como con el boton de compra
+individual.
+
+Codigo relacionado:
+
+- `src/lib/cart.ts` — el "store" del carrito (leer/escribir localStorage,
+  agregar/quitar/cambiar cantidad, armar el mensaje de WhatsApp).
+- `src/components/cart/CartWidget.tsx` — icono + panel lateral (en el header).
+- `src/components/cart/AddToCartButton.tsx` — boton para agregar un producto
+  (variante `compact` en las tarjetas, `full` con selector de cantidad en el
+  detalle de producto).
+
 ## Build / deploy
 
 ```bash

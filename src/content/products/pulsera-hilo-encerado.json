@@ -3,6 +3,6 @@
   "price": 18000,
   "description": "Pulsera artesanal tejida a mano con hilo encerado, ajustable a cualquier muñeca.",
   "category": "Accesorios",
-  "featured": false,
+  "featured": true,
   "inStock": false
 }
