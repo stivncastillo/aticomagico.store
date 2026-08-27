@@ -1,0 +1,30 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import ProductFilter from "@/components/ProductFilter";
+import { siteConfig } from "@/lib/config";
+
+const allProducts = await getCollection("products");
+
+const products = allProducts.map((p) => ({
+  slug: p.id,
+  name: p.data.name,
+  price: p.data.price,
+  compareAtPrice: p.data.compareAtPrice,
+  image: p.data.image,
+  imageAlt: p.data.imageAlt,
+  category: p.data.category,
+  inStock: p.data.inStock,
+}));
+---
+
+<Layout title="Catalogo" description={`Todos los productos disponibles de ${siteConfig.name}.`}>
+  <section class="container-page py-12 sm:py-16">
+    <h1 class="text-3xl font-extrabold text-ink-900 sm:text-4xl">Catalogo</h1>
+    <p class="mt-2 text-ink-700">Explora todos los productos disponibles.</p>
+
+    <div class="mt-8">
+      <ProductFilter client:load products={products} locale={siteConfig.locale} currency={siteConfig.currency} />
+    </div>
+  </section>
+</Layout>

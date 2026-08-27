@@ -1,0 +1,52 @@
+---
+import { MessageCircle } from "@lucide/astro";
+import InstagramIcon from "@/components/icons/InstagramIcon.astro";
+import { siteConfig } from "@/lib/config";
+
+const navItems = [
+  { href: "/", label: "Inicio" },
+  { href: "/catalogo", label: "Catalogo" },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="sticky top-0 z-40 border-b border-black/5 bg-white/80 backdrop-blur">
+  <div class="container-page flex h-16 items-center justify-between">
+    <a href="/" class="text-lg font-extrabold tracking-tight text-ink-900">
+      {siteConfig.name}
+    </a>
+
+    <nav class="hidden items-center gap-6 sm:flex">
+      {
+        navItems.map((item) => (
+          <a
+            href={item.href}
+            class:list={[
+              "text-sm font-medium transition hover:text-brand-600",
+              currentPath === item.href ? "text-brand-600" : "text-ink-700",
+            ]}
+          >
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a
+        href={siteConfig.instagramUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram"
+        class="text-ink-700 transition hover:text-brand-600"
+      >
+        <InstagramIcon class="h-5 w-5" />
+      </a>
+      <a href="/catalogo" class="btn-whatsapp !px-4 !py-2 text-xs sm:text-sm">
+        <MessageCircle class="h-4 w-4" />
+        Ver catalogo
+      </a>
+    </div>
+  </div>
+</header>

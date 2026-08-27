@@ -1,0 +1,43 @@
+---
+import { MessageCircle } from "@lucide/astro";
+import InstagramIcon from "@/components/icons/InstagramIcon.astro";
+import { siteConfig } from "@/lib/config";
+import { buildWhatsAppLink, generalWhatsAppMessage } from "@/lib/whatsapp";
+---
+
+<section class="border-b border-black/5 bg-gradient-to-b from-brand-50 to-transparent">
+  <div class="container-page grid items-center gap-10 py-16 sm:py-24 lg:grid-cols-2">
+    <div>
+      <h1 class="text-4xl font-extrabold tracking-tight text-ink-900 sm:text-5xl">
+        {siteConfig.tagline}
+      </h1>
+      <p class="mt-4 max-w-md text-base text-ink-700 sm:text-lg">
+        {siteConfig.description}
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="/catalogo" class="btn-secondary">
+          Ver catalogo
+        </a>
+        <a
+          href={buildWhatsAppLink(generalWhatsAppMessage())}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-whatsapp"
+        >
+          <MessageCircle class="h-4 w-4" />
+          Escribir por WhatsApp
+        </a>
+        <a
+          href={siteConfig.instagramUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-secondary"
+        >
+          <InstagramIcon class="h-4 w-4" />
+          Instagram
+        </a>
+      </div>
+    </div>
+    <div class="mx-auto aspect-square w-full max-w-md rounded-3xl bg-gradient-to-br from-brand-200 via-brand-100 to-white shadow-inner"></div>
+  </div>
+</section>
