@@ -148,7 +148,7 @@ Esto:
    | `precio_venta`            | **vos**                | el precio que se muestra en la tienda. Si lo dejas vacio, usa `precio_mayorista` |
    | `imagen`                  | el scraper             | URL de la foto principal (portada) |
    | `imagenes`                 | el scraper (modo `--deep`) / vos | fotos extra para el carousel del producto, **separadas por coma `,` o punto y coma `;`** (ej: `url1, url2; url3`). Solo se llena sola si el producto tiene mas de 1 foto en el proveedor y corriste `npm run scrape:deep`. Podes agregar o editar las URLs a mano. Si la dejas vacia, la pagina del producto muestra solo la portada, sin carousel |
-   | `descripcion`              | vos (opcional)          | si la dejas vacia, se usa el `nombre` como descripcion |
+   | `descripcion`              | **vos** (o el scraper, solo si esta vacia)          | igual que `precio_venta`: si le escribis algo, queda protegida para siempre — ni `scrape` ni `scrape:deep` te la pisan. Si la dejas vacia, `scrape:deep` la llena con la descripcion real del proveedor (y si sigue vacia, al importar se usa el `nombre` como descripcion) |
    | `destacado`                | **vos**                | `TRUE`/`FALSE` — si aparece en la seccion de destacados |
    | `disponible`                | **vos**                | `TRUE`/`FALSE` — si esta en stock |
    | `publicar`                   | **vos**                | `TRUE`/`FALSE` — si `FALSE`, el producto se borra de la tienda al importar |
@@ -199,17 +199,16 @@ npm run scrape:deep
 
 Esto abre cada producto uno por uno en el catalogo del proveedor y trae:
 
-- Su descripcion real, guardada en la columna `descripcion`.
+- Su descripcion real, guardada en la columna `descripcion` — **solo si
+  esa columna todavia esta vacia**. Funciona igual que `precio_venta`: en
+  cuanto le escribis algo a mano, queda protegida para siempre, ningun
+  `scrape` ni `scrape:deep` posterior te la va a pisar.
 - Si tiene mas de una foto, todas esas fotos extra, guardadas en la
   columna `imagenes` (separadas por `;`) — son las que arman el carousel
-  en la pagina del producto.
-
-Ojo: cada vez que corras `npm run scrape:deep`, estas dos columnas se
-actualizan con lo que haya en el proveedor **en ese momento** — si le
-habias hecho cambios a mano a la descripcion o a las fotos de un
-producto, un `scrape:deep` posterior te las pisa. Si no quieres que un
-producto en particular se toque, no vuelvas a correr `--deep` para ese
-producto (o guarda tu version aparte antes de correrlo de nuevo).
+  en la pagina del producto. A diferencia de `descripcion`, esta columna
+  **si se actualiza cada vez** que corras `scrape:deep` y el proveedor
+  siga mostrando mas de 1 foto (aunque ya le hubieras editado el
+  contenido a mano).
 
 Correr `npm run scrape:deep` tarda bastante mas que el modo normal — con
 cientos de productos puede tomar varios minutos.

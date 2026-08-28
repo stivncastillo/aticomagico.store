@@ -79,13 +79,13 @@ export default function ProductFilter({ products, locale, currency }: Props) {
 
   return (
     <div ref={topRef}>
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex flex-col gap-4 sm:flex-col sm:items-center sm:justify-between">
         <input
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Buscar producto..."
-          className="w-full rounded-full border border-black/10 bg-white px-4 py-2.5 text-sm outline-none focus:border-brand-400 sm:max-w-xs"
+          className="w-full rounded-full border border-black/10 bg-white px-4 py-2.5 text-sm outline-none focus:border-brand-400"
         />
 
         <div className="flex flex-wrap gap-2">
