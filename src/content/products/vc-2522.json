@@ -1,0 +1,15 @@
+{
+  "name": "Limpiador De Oidos",
+  "price": 38000,
+  "category": "Belleza",
+  "description": "Limpiador De Oidos",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Limpiador De Oidos",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19cbefedb83-variedadestvcali-qg5sy4ji3zo-ptpvatibsz.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19cbefedb83-variedadestvcali-qg5sy4ji3zo-ptpvatibsz.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19cbefed12f-variedadestvcali-qg5sy4ji3zo-9q7i7isi3j8.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19cbefed592-variedadestvcali-qg5sy4ji3zo-o7ek1f5wr1j.png"
+  ]
+}

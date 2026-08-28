@@ -1,0 +1,15 @@
+{
+  "name": "Tabla Para Picar",
+  "price": 32000,
+  "category": "Cocina",
+  "description": "Fabricadas en acero inoxidable de alta calidad, naturalmente resistente al óxido, la corrosión y las manchas. Medidas: 23cm x 34cm",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Tabla Para Picar",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19f3d34ff3e-variedadestvcali-11049uvgmym-9b31j8ef24j.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19f3d34ff3e-variedadestvcali-11049uvgmym-9b31j8ef24j.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19f3d35049f-variedadestvcali-11049uvgmym-jl5cipc7z4.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19f3d350b94-variedadestvcali-11049uvgmym-s7k8fzjq4d9.png"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Gafas Inteligentes",
+  "price": 69000,
+  "category": "Tecnología",
+  "description": "Gafas de sol inteligentes. V1 pro protección UV, reproductor de música, llamadas telefónicas",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Gafas Inteligentes",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1990c65c4e9-variedadestvcali-h3ltkhqoz5n-zjtvvx0a4dc.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1990c65c4e9-variedadestvcali-h3ltkhqoz5n-zjtvvx0a4dc.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1990c65cdf4-variedadestvcali-h3ltkhqoz5n-2zk0da5a4fh.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1990c661b69-variedadestvcali-h3ltkhqoz5n-ddh4yg9hh65.png"
+  ]
+}

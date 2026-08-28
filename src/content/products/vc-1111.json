@@ -1,0 +1,15 @@
+{
+  "name": "Saca Golpes Ventosa",
+  "price": 24000,
+  "category": "Herramienta",
+  "description": "Extractor Ventosa Chupa Saca Golpes Carro",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Saca Golpes Ventosa",
+  "image": "https://firebasestorage.googleapis.com/v0/b/mi-catalogo-1f031.appspot.com/o/variedades_tv_cali-ul7x5h640zn-xysy75n796.png?alt=media&token=1a66b7a1-69ea-41f0-bf95-9d537d1dd6a2",
+  "images": [
+    "https://firebasestorage.googleapis.com/v0/b/mi-catalogo-1f031.appspot.com/o/variedades_tv_cali-ul7x5h640zn-xysy75n796.png?alt=media&token=1a66b7a1-69ea-41f0-bf95-9d537d1dd6a2",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19523e22c74-variedadestvcali-ul7x5h640zn-tbimfyob2bs.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19523e231aa-variedadestvcali-ul7x5h640zn-2qqs5j7f69q.png"
+  ]
+}

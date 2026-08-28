@@ -1,0 +1,14 @@
+{
+  "name": "Maleta Mascota Tm",
+  "price": 68000,
+  "category": "Mascota",
+  "description": "Maleta para mascota, medida de 40x30cm",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Maleta Mascota Tm",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19d73cec124-variedadestvcali-f2qudmcoxo9-i9a43kf5byg.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19d73cec124-variedadestvcali-f2qudmcoxo9-i9a43kf5byg.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19d73cec4d2-variedadestvcali-f2qudmcoxo9-suecxb2wap.png"
+  ]
+}

@@ -4,7 +4,7 @@ export const siteConfig = {
   name: "Atico Magico",
   tagline: "Objetos con encanto para tu espacio",
   description:
-    "Catalogo de productos de Atico Magico. Elige lo que te gusta y compra directo por WhatsApp.",
+    "Catalogo de productos de Ático Mágico. Elige lo que te gusta y compra directo por WhatsApp.",
   instagramUrl: "https://instagram.com/aticomagico.ventas",
   whatsappCatalogUrl: "https://wa.me/c/573023798525",
   currency: "COP",

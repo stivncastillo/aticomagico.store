@@ -1,0 +1,15 @@
+{
+  "name": "Mini Waflera Redonda",
+  "price": 32000,
+  "category": "Cocina",
+  "description": "Mini waflera antiadherente, electrica portátil",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Mini Waflera Redonda",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19321b422f3-variedadestvcali-brgx7hxfos-w0u2rnc19g.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19321b422f3-variedadestvcali-brgx7hxfos-w0u2rnc19g.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19321b428b3-variedadestvcali-brgx7hxfos-xoo3co6abdi.png",
+    "https://firebasestorage.googleapis.com/v0/b/mi-catalogo-1f031.appspot.com/o/variedades_tv_cali-brgx7hxfos-zd74d4r7esq.png?alt=media&token=25d68585-d66b-4e95-a0e8-791d526ac2f6"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Máquina Contadora De Billetes",
+  "price": 198000,
+  "category": "Herramienta",
+  "description": "Detección automática con UV (ultravioleta) y MG mientras se cuenta, inicio, parada y limpieza automáticos",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Máquina Contadora De Billetes",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19ac7b6cd06-variedadestvcali-7eh2dizepj8-rdjr98uba7b.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19ac7b6cd06-variedadestvcali-7eh2dizepj8-rdjr98uba7b.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19ac7b6d150-variedadestvcali-7eh2dizepj8-5g6z9xz477y.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19ac7b6dae5-variedadestvcali-7eh2dizepj8-k11x8h3vyqm.png"
+  ]
+}

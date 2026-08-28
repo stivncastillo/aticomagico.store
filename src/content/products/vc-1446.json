@@ -1,0 +1,14 @@
+{
+  "name": "Recipiente Palomitas",
+  "price": 36000,
+  "category": "Cocina",
+  "description": "Popcorn popper, envase de vidro para hacer palomitas en el microondas, de 2 a 3 minutos.",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Recipiente Palomitas",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/199e45dd511-variedadestvcali-303zsw60my3-hhefw6vry04.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/199e45dd511-variedadestvcali-303zsw60my3-hhefw6vry04.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/199e45dda1a-variedadestvcali-303zsw60my3-0t674lwh3dw.png"
+  ]
+}

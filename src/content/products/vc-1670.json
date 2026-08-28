@@ -1,0 +1,15 @@
+{
+  "name": "Cepillo Alisador Fh909",
+  "price": 26000,
+  "category": "Belleza",
+  "description": "Cepillo alisador, con 5 niveles de temperatura, portátil y fácil de llevar",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Cepillo Alisador Fh909",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/193224cd440-variedadestvcali-jvrfm995z4a-8lvuma6rztm.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/193224cd440-variedadestvcali-jvrfm995z4a-8lvuma6rztm.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/193224cd7f5-variedadestvcali-jvrfm995z4a-qspzsn5zxod.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/193224cdc6e-variedadestvcali-jvrfm995z4a-8xddp97eeyf.png"
+  ]
+}

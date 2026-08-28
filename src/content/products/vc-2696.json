@@ -1,0 +1,16 @@
+{
+  "name": "Mesa Plegable Ltz",
+  "price": 340000,
+  "category": "Mesas",
+  "description": "Mesa plegable con cuatro sillas metálicas\nMedidas mesa: 66cm x 86cmx67cm\nMedidas sillas: 40cm x 28cm x 30cm\nMedidas completa: 139cm x 82cm\nColores: gris y azul",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Mesa Plegable Ltz",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19e9dde7d64-variedadestvcali-68feciiytbq-8mrfge853lj.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19e9dde7d64-variedadestvcali-68feciiytbq-8mrfge853lj.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19e9dde928f-variedadestvcali-68feciiytbq-vtagug5ow8h.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19e9ddf9202-variedadestvcali-68feciiytbq-xwraw54hd39.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19e9ddf958a-variedadestvcali-68feciiytbq-5f9kcpq0mv9.png"
+  ]
+}

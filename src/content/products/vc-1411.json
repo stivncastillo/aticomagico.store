@@ -1,0 +1,14 @@
+{
+  "name": "Lampara Luna Rgb",
+  "price": 32000,
+  "category": "Hogar",
+  "description": "Lampara de luna RGB",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Lampara Luna Rgb",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/193888a478a-variedadestvcali-rnzeglr96z-6b368p2wrgs.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/193888a478a-variedadestvcali-rnzeglr96z-6b368p2wrgs.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/193888a57a6-variedadestvcali-rnzeglr96z-txsj8wfpfu.png"
+  ]
+}

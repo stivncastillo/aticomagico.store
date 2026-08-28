@@ -1,0 +1,15 @@
+{
+  "name": "Maquina Pelquera Mp-1805",
+  "price": 68000,
+  "category": "Belleza",
+  "description": "Maquina para peluquear, recargable tipo C, con 4 guías de corte",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Maquina Pelquera Mp-1805",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/199aac74608-variedadestvcali-h7d1vk3s5lk-s8jmggrjbpm.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/199aac74608-variedadestvcali-h7d1vk3s5lk-s8jmggrjbpm.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/199aac74b5f-variedadestvcali-h7d1vk3s5lk-czdktvffwoi.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/199aac75078-variedadestvcali-h7d1vk3s5lk-vki2umkgl3k.png"
+  ]
+}

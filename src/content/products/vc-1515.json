@@ -1,0 +1,14 @@
+{
+  "name": "Triturador De Hielo",
+  "price": 26000,
+  "category": "Hogar",
+  "description": "Máquina trituradora de hielo y granizados manual",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Triturador De Hielo",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1985bff5a6b-variedadestvcali-x5nlzo5e16j-f9va0de1b9.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1985bff5a6b-variedadestvcali-x5nlzo5e16j-f9va0de1b9.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1985bff710e-variedadestvcali-x5nlzo5e16j-nb4sibnyhrc.png"
+  ]
+}

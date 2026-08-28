@@ -1,0 +1,14 @@
+{
+  "name": "Libro Caja Fuerte Grande",
+  "price": 38000,
+  "category": "Herramienta",
+  "description": "Caja fuerte tipo libro, medidas de 24x15.5x5.5cm, con 2 llaves",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Libro Caja Fuerte Grande",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19ac7c3284c-variedadestvcali-gssay75pg1f-27y9tgjxl1fj.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19ac7c3284c-variedadestvcali-gssay75pg1f-27y9tgjxl1fj.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19ac7c32cc0-variedadestvcali-gssay75pg1f-4q1a0ltvpo.png"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Lampara Linterna Para Cabeza",
+  "price": 12000,
+  "category": "Herramienta",
+  "description": "Lampara Linterna Para Cabeza",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Lampara Linterna Para Cabeza",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/192794a2a6d-variedadestvcali-xyot8prpyuk-671hubw33x5.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/192794a2a6d-variedadestvcali-xyot8prpyuk-671hubw33x5.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/192794a2eb8-variedadestvcali-xyot8prpyuk-ow423d4d25s.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/192794a333b-variedadestvcali-xyot8prpyuk-dwcmfwv2sx.png"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Maleta Viajera 808",
+  "price": 80000,
+  "category": "Hogar",
+  "description": "Maleta viajera extensible, con varios compartimientos, perfecta para viajes y actividades deportivas, medida de 33x47x24cm",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Maleta Viajera 808",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1951444e869-variedadestvcali-hu5f1trj3gc-btz77xtqnlf.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1951444e869-variedadestvcali-hu5f1trj3gc-btz77xtqnlf.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1951444ec71-variedadestvcali-hu5f1trj3gc-d89dffnlp2m.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1951444f0c2-variedadestvcali-hu5f1trj3gc-tgkvp2op4f.png"
+  ]
+}

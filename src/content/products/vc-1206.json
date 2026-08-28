@@ -1,0 +1,15 @@
+{
+  "name": "Sanduchera 3 En 1 Xinyuxin",
+  "price": 88000,
+  "category": "Cocina",
+  "description": "Sanduchera 3 en 1, 3 moldes diferentes para los sandwich",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Sanduchera 3 En 1 Xinyuxin",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1927d21d2fa-variedadestvcali-a14reg0gnc9-mw0eizlzlja.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1927d21d2fa-variedadestvcali-a14reg0gnc9-mw0eizlzlja.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1927d21dcf7-variedadestvcali-a14reg0gnc9-pq5yowipkja.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1927d21e0ea-variedadestvcali-a14reg0gnc9-i8vqn4wv8k9.png"
+  ]
+}

@@ -12,7 +12,7 @@ export interface CartProductInput {
 
 interface Props {
   product: CartProductInput;
-  variant?: "compact" | "full";
+  variant?: "compact" | "full" | "block";
 }
 
 export default function AddToCartButton({ product, variant = "compact" }: Props) {
@@ -45,6 +45,23 @@ export default function AddToCartButton({ product, variant = "compact" }: Props)
         className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-ink-900/10 bg-white text-ink-900 transition hover:border-brand-400 hover:text-brand-600 disabled:pointer-events-none disabled:opacity-40"
       >
         {justAdded ? <CheckIcon className="h-4 w-4 text-brand-600" /> : <BagIcon className="h-4 w-4" />}
+      </button>
+    );
+  }
+
+  // "block": boton de ancho completo con texto, para reemplazar el viejo
+  // "Comprar" directo en el grid del catalogo - ahora todo pasa por el
+  // carrito.
+  if (variant === "block") {
+    return (
+      <button
+        type="button"
+        onClick={handleAdd}
+        disabled={!product.inStock}
+        className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-full bg-brand-500 px-3 py-2 text-xs font-semibold text-white transition hover:bg-brand-700 disabled:pointer-events-none disabled:opacity-40 sm:text-sm"
+      >
+        {justAdded ? <CheckIcon className="h-4 w-4" /> : <BagIcon className="h-4 w-4" />}
+        {justAdded ? "Agregado" : "Agregar"}
       </button>
     );
   }

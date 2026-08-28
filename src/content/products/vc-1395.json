@@ -1,0 +1,10 @@
+{
+  "name": "Dispensador De Jabón",
+  "price": 38000,
+  "category": "Hogar",
+  "description": "Dispensador Con Sensor Infrarrojo Plateado",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Dispensador De Jabón",
+  "image": "https://firebasestorage.googleapis.com/v0/b/mi-catalogo-1f031.appspot.com/o/variedades_tv_cali-xfj6kh1lcc-isielug6mw.png?alt=media&token=478cae26-3820-45d0-814f-ac2ad7bd0965"
+}

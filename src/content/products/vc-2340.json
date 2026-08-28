@@ -1,0 +1,14 @@
+{
+  "name": "Tendedero Ropa Zapatero 3 Niveles",
+  "price": 25000,
+  "category": "Hogar",
+  "description": "Tendedero Ropa Zapatero 3 Niveles",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Tendedero Ropa Zapatero 3 Niveles",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19ba3c360a2-variedadestvcali-nsd8m5lo3x-p3lc64rt51h.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19ba3c360a2-variedadestvcali-nsd8m5lo3x-p3lc64rt51h.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19ba3c36b82-variedadestvcali-nsd8m5lo3x-lhejr3lv58f.png"
+  ]
+}

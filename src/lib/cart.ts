@@ -9,6 +9,14 @@ export interface CartItem {
   qty: number;
 }
 
+/** Datos del cliente que se piden antes de mandar el pedido por WhatsApp. */
+export interface CustomerInfo {
+  name: string;
+  email: string;
+  address: string;
+  city: string;
+}
+
 type CartProduct = Omit<CartItem, "qty">;
 
 const STORAGE_KEY = "atico-magico:cart";
@@ -126,18 +134,36 @@ export function formatPrice(value: number) {
   }).format(value);
 }
 
-/** Arma el link de wa.me con el detalle del pedido completo del carrito. */
-export function buildCartWhatsAppLink(items: CartItem[]) {
+/**
+ * Arma el link de wa.me con el detalle del pedido completo del carrito.
+ * Si se pasan los datos del cliente (nombre, correo, direccion, ciudad -
+ * pedidos en el formulario de checkout del carrito), se agregan al final
+ * del mensaje para que el envio se pueda coordinar sin ida y vuelta.
+ */
+export function buildCartWhatsAppLink(items: CartItem[], customer?: CustomerInfo) {
   const lines = items.map(
     (item, i) => `${i + 1}. ${item.name} x${item.qty} - ${formatPrice(item.price * item.qty)}`
   );
   const total = getCartTotal(items);
-  const message = [
+  const messageParts = [
     `Hola! Quiero hacer este pedido de ${siteConfig.name}:`,
     "",
     ...lines,
     "",
     `Total: ${formatPrice(total)}`,
-  ].join("\n");
+  ];
+
+  if (customer) {
+    messageParts.push(
+      "",
+      "Datos de envio:",
+      `Nombre: ${customer.name}`,
+      `Correo: ${customer.email}`,
+      `Direccion: ${customer.address}`,
+      `Ciudad: ${customer.city}, Colombia`
+    );
+  }
+
+  const message = messageParts.join("\n");
   return `https://wa.me/${PUBLIC_WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }

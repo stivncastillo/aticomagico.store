@@ -1,0 +1,15 @@
+{
+  "name": "Joyero Viajero",
+  "price": 9000,
+  "category": "Belleza",
+  "description": "Joyero Viajero",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Joyero Viajero",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19f6617a4b1-variedadestvcali-vu2i10z1i4m-hyz31obe25.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19f6617a4b1-variedadestvcali-vu2i10z1i4m-hyz31obe25.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19f6617a8f7-variedadestvcali-vu2i10z1i4m-ksj3n3b0iaf.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19f6617bd79-variedadestvcali-vu2i10z1i4m-m6ubolg22h.png"
+  ]
+}

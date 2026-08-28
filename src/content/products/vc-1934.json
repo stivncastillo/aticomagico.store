@@ -1,0 +1,16 @@
+{
+  "name": "Masajeador Ventosa Recargable",
+  "price": 42000,
+  "category": "Deporte",
+  "description": "Masajeador ventosa, 12 niveles de temperatura, recargable, pantalla led",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Masajeador Ventosa Recargable",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/197d08fd49f-variedadestvcali-9i85aypq5dj-nvqydz3mc3e.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/197d08fd49f-variedadestvcali-9i85aypq5dj-nvqydz3mc3e.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/197d08fc3e3-variedadestvcali-9i85aypq5dj-dln3mei4wv4.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/197d08fce15-variedadestvcali-9i85aypq5dj-ng5j46pe3xh.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/197d08fd0dc-variedadestvcali-9i85aypq5dj-zd4v8tgc0fl.png"
+  ]
+}

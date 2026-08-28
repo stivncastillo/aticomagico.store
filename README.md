@@ -135,7 +135,10 @@ Esto:
 1. Abre el catalogo, acepta el aviso de cookies si aparece.
 2. Hace clic en "Ver mas" hasta cargar todo el catalogo.
 3. Lee codigo, nombre, precio de mayorista, categoria e imagen de cada
-   tarjeta.
+   tarjeta. El listado marca los productos que tienen mas de 1 foto — para
+   esos (solo esos), abre el modal del producto y trae la galeria completa.
+   No hace falta `--deep` para esto — ver "Descripciones reales y fotos
+   extra" mas abajo.
 4. Escribe (o actualiza) `data/productos-proveedor.xlsx`, con una fila por
    producto y estas columnas:
 
@@ -147,7 +150,7 @@ Esto:
    | `precio_mayorista`        | el scraper             | precio del proveedor, de referencia — **no es el precio de venta** |
    | `precio_venta`            | **vos**                | el precio que se muestra en la tienda. Si lo dejas vacio, usa `precio_mayorista` |
    | `imagen`                  | el scraper             | URL de la foto principal (portada) |
-   | `imagenes`                 | el scraper (modo `--deep`) / vos | fotos extra para el carousel del producto, **separadas por coma `,` o punto y coma `;`** (ej: `url1, url2; url3`). Solo se llena sola si el producto tiene mas de 1 foto en el proveedor y corriste `npm run scrape:deep`. Podes agregar o editar las URLs a mano. Si la dejas vacia, la pagina del producto muestra solo la portada, sin carousel |
+   | `imagenes`                 | el scraper / vos | fotos extra para el carousel del producto, **separadas por coma `,` o punto y coma `;`** (ej: `url1, url2; url3`). Se llena sola con **cualquier** `npm run scrape` (no hace falta `--deep`) si el producto tiene mas de 1 foto en el proveedor — y se sigue refrescando en cada scrape mientras siga teniendo varias. Podes agregar o editar las URLs a mano igual. Si la dejas vacia, la pagina del producto muestra solo la portada, sin carousel |
    | `descripcion`              | **vos** (o el scraper, solo si esta vacia)          | igual que `precio_venta`: si le escribis algo, queda protegida para siempre — ni `scrape` ni `scrape:deep` te la pisan. Si la dejas vacia, `scrape:deep` la llena con la descripcion real del proveedor (y si sigue vacia, al importar se usa el `nombre` como descripcion) |
    | `destacado`                | **vos**                | `TRUE`/`FALSE` — si aparece en la seccion de destacados |
    | `disponible`                | **vos**                | `TRUE`/`FALSE` — si esta en stock |
@@ -155,9 +158,10 @@ Esto:
    | `en_catalogo_proveedor`       | el scraper             | `TRUE` si el proveedor lo sigue teniendo, `FALSE` si desaparecio de su catalogo (no se borra solo — es un aviso para que decidas) |
 
    Correr `npm run scrape` de nuevo **nunca te pisa** `categoria`,
-   `precio_venta`, `destacado`, `disponible` ni `publicar` si ya los habias
-   editado — solo actualiza lo que viene del proveedor (nombre, precio de
-   mayorista, imagen) y agrega productos nuevos.
+   `precio_venta`, `descripcion`, `destacado`, `disponible` ni `publicar` si
+   ya les habias puesto algo — solo actualiza lo que viene del proveedor
+   (nombre, precio de mayorista, imagen, y `imagenes` si tiene varias fotos)
+   y agrega productos nuevos.
 5. Al final imprime un resumen: cuantos productos son nuevos, cuantos se
    actualizaron, y cuantos ya no estan en el catalogo del proveedor.
 
@@ -187,31 +191,36 @@ Esto lee el Excel y, por cada fila:
 Al terminar corre `npm run build` (o `npm run dev` si ya lo tienes abierto)
 para ver los productos actualizados.
 
-### Descripciones reales y fotos extra / carousel (opcional, mas lento)
+### Fotos extra / carousel y descripciones reales
 
-Por defecto el scraper solo trae la foto principal de cada producto (la
-del listado) y no trae su descripcion real (el listado tampoco la
-muestra). Si los quieres, corre:
+**Fotos extra**: no hace falta nada especial. Cualquier `npm run scrape`
+normal ya abre el detalle de los productos que el proveedor marca con mas
+de 1 foto (y solo esos, el resto del catalogo se lee rapido, como siempre)
+y llena la columna `imagenes` sola. Esta columna se sigue refrescando en
+cada scrape mientras el producto siga teniendo varias fotos — si le editas
+las URLs a mano y el producto sigue con varias fotos en el proveedor, un
+scrape posterior te la vuelve a pisar (a diferencia de `descripcion` y
+`precio_venta`, que si quedan protegidas).
+
+**Descripcion real**: por defecto el listado no la trae (usa el `nombre`
+como descripcion al importar). Si la queres, corre:
 
 ```bash
 npm run scrape:deep
 ```
 
-Esto abre cada producto uno por uno en el catalogo del proveedor y trae:
+Esto abre **todos** los productos (no solo los de varias fotos) para leer
+su descripcion real en el catalogo del proveedor, y la guarda en la
+columna `descripcion` — pero **solo si esa columna todavia esta vacia**.
+Funciona igual que `precio_venta`: en cuanto le escribis algo a mano, queda
+protegida para siempre, ningun `scrape` ni `scrape:deep` posterior te la
+va a pisar.
 
-- Su descripcion real, guardada en la columna `descripcion` — **solo si
-  esa columna todavia esta vacia**. Funciona igual que `precio_venta`: en
-  cuanto le escribis algo a mano, queda protegida para siempre, ningun
-  `scrape` ni `scrape:deep` posterior te la va a pisar.
-- Si tiene mas de una foto, todas esas fotos extra, guardadas en la
-  columna `imagenes` (separadas por `;`) — son las que arman el carousel
-  en la pagina del producto. A diferencia de `descripcion`, esta columna
-  **si se actualiza cada vez** que corras `scrape:deep` y el proveedor
-  siga mostrando mas de 1 foto (aunque ya le hubieras editado el
-  contenido a mano).
-
-Correr `npm run scrape:deep` tarda bastante mas que el modo normal — con
-cientos de productos puede tomar varios minutos.
+Como `--deep` abre el detalle de todos los productos (no solo los de
+varias fotos), tarda bastante mas que el scrape normal — con cientos de
+productos puede tomar varios minutos. Si ya tenes las descripciones que
+queres (escritas a mano o traidas una vez con `--deep`), no hace falta
+volver a correrlo — el scrape normal ya te mantiene `imagenes` al dia.
 
 ### Carousel de fotos en la pagina del producto
 
@@ -222,8 +231,8 @@ dedo en celular. Si solo tiene una foto (o `imagenes` esta vacia), se ve
 como antes: una sola imagen fija, sin controles.
 
 Podes armar la columna `imagenes` de dos formas: dejando que
-`npm run scrape:deep` la traiga sola del proveedor, o escribiendola vos
-mismo a mano en el Excel — poné las URLs de las fotos separadas por coma
+`npm run scrape` la traiga sola del proveedor (no hace falta `--deep`), o
+escribiendola vos mismo a mano en el Excel — poné las URLs de las fotos separadas por coma
 `,` o punto y coma `;`, por ejemplo:
 
 ```
@@ -275,10 +284,13 @@ Si prefieres no automatizar nada todavia, tambien esta perfecto correr
 ### Si el proveedor cambia su pagina
 
 El scraper lee la pagina por su estructura HTML actual (nombres de clases
-como `.slide-q-card`, `.product-name`, `.view-more-container`, etc.). Si el
-proveedor rediseña su sitio, el script puede dejar de encontrar los
-productos o de cargar el catalogo completo — no se rompe el resto de la
-tienda, simplemente no actualiza el Excel. Si eso pasa, avisame y lo ajusto.
+como `.slide-q-card`, `.product-name`, `.view-more-container`, etc. —
+incluida `.multiple-images`, la que marca los productos con varias fotos:
+si el proveedor la cambia, esos productos simplemente quedan con solo la
+portada). Si el proveedor rediseña su sitio, el script puede dejar de
+encontrar los productos o de cargar el catalogo completo — no se rompe el
+resto de la tienda, simplemente no actualiza el Excel. Si eso pasa, avisame
+y lo ajusto.
 
 ## Build / deploy
 

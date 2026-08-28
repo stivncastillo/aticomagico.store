@@ -1,0 +1,14 @@
+{
+  "name": "Compresor De Llantas",
+  "price": 60000,
+  "category": "Herramienta",
+  "description": "Compresor De Aire Portable Carro Moto Bicicleta Balones, con linterna, recargable",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Compresor De Llantas",
+  "image": "https://firebasestorage.googleapis.com/v0/b/mi-catalogo-1f031.appspot.com/o/variedades_tv_cali-glc1is7dr8a-dq2ad9bc7rn.png?alt=media&token=0a395baa-05a1-4aba-8440-c5de9ac469be",
+  "images": [
+    "https://firebasestorage.googleapis.com/v0/b/mi-catalogo-1f031.appspot.com/o/variedades_tv_cali-glc1is7dr8a-dq2ad9bc7rn.png?alt=media&token=0a395baa-05a1-4aba-8440-c5de9ac469be",
+    "https://firebasestorage.googleapis.com/v0/b/mi-catalogo-1f031.appspot.com/o/variedades_tv_cali-glc1is7dr8a-0gtgxlezi4o.png?alt=media&token=6ab645bd-0372-4aec-95ea-24002efbd701"
+  ]
+}

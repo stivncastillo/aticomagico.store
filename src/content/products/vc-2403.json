@@ -1,0 +1,15 @@
+{
+  "name": "Cepillo Eléctrico Dental",
+  "price": 29000,
+  "category": "Belleza",
+  "description": "Cepillo eléctrico dental de 3 cabezales con su batería de larga duración, podrás disfrutar de un cuidado dental sin interrupciones, se puede grabar la intensidad deseada",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Cepillo Eléctrico Dental",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19b4c712213-variedadestvcali-5n0dggnntr6-mvcnmj1klzl.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19b4c712213-variedadestvcali-5n0dggnntr6-mvcnmj1klzl.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19b4c71368e-variedadestvcali-5n0dggnntr6-us55t4vuu87.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19b4c713cef-variedadestvcali-5n0dggnntr6-ajiaig1pqtc.png"
+  ]
+}

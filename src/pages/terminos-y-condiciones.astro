@@ -1,0 +1,127 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { siteConfig } from "@/lib/config";
+import { buildWhatsAppLink, generalWhatsAppMessage } from "@/lib/whatsapp";
+
+const lastUpdated = "28 de agosto de 2026";
+---
+
+<Layout
+  title="Terminos y Condiciones"
+  description={`Terminos y condiciones de compra de ${siteConfig.name}: disponibilidad, medios de pago, envios y garantia.`}
+>
+  <section class="container-page py-10 sm:py-16">
+    <div class="mx-auto max-w-3xl">
+      <p class="text-xs font-medium uppercase tracking-wide text-brand-600">Legal</p>
+      <h1 class="mt-2 text-3xl font-extrabold text-ink-900 sm:text-4xl">Terminos y Condiciones</h1>
+      <p class="mt-3 text-sm text-ink-700">Ultima actualizacion: {lastUpdated}</p>
+
+      <p class="mt-6 leading-relaxed text-ink-700">
+        Estos terminos explican como funciona una compra en {siteConfig.name}. Al escribirnos por
+        WhatsApp para hacer un pedido, confirmas que los leiste y estas de acuerdo con ellos.
+      </p>
+
+      <div class="mt-10 space-y-10">
+        <div>
+          <h2 class="text-xl font-bold text-ink-900">1. Como funciona la compra</h2>
+          <p class="mt-3 leading-relaxed text-ink-700">
+            {siteConfig.name} es un catalogo de productos: no vendemos ni cobramos directamente
+            dentro de la pagina. Eliges lo que te interesa, lo agregas al carrito y al finalizar
+            se genera un mensaje de WhatsApp con el detalle de tu pedido y tus datos de envio.
+            La compra se confirma y se cierra por ese medio, directamente con nosotros.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-bold text-ink-900">2. Disponibilidad de los productos</h2>
+          <p class="mt-3 leading-relaxed text-ink-700">
+            Todos los productos publicados estan sujetos a disponibilidad. Puede pasar que un
+            producto que ves en el catalogo se agote antes de que confirmemos tu pedido. Por eso,
+            toda compra debe confirmarse por WhatsApp: ahi te avisamos si el producto sigue
+            disponible, su estado y cualquier detalle adicional antes de cerrar el pedido.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-bold text-ink-900">3. Medios de pago</h2>
+          <p class="mt-3 leading-relaxed text-ink-700">Aceptamos los siguientes medios de pago:</p>
+          <ul class="mt-3 list-disc space-y-1.5 pl-5 text-ink-700">
+            <li>Nequi</li>
+            <li>Daviplata</li>
+            <li>Llave Bre-B</li>
+            <li>Pago contraentrega</li>
+          </ul>
+          <p class="mt-3 leading-relaxed text-ink-700">
+            Coordinamos el medio de pago que prefieras directamente por WhatsApp al confirmar tu
+            pedido.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-bold text-ink-900">4. Envios</h2>
+          <p class="mt-3 leading-relaxed text-ink-700">
+            Por ahora enviamos exclusivamente dentro de Colombia. El costo del envio corre por
+            cuenta del cliente en compras inferiores a $150.000 COP. En compras iguales o
+            superiores a $150.000 COP el envio es gratis.
+          </p>
+          <p class="mt-3 leading-relaxed text-ink-700">
+            El tiempo de entrega puede variar segun la disponibilidad del producto y tu ubicacion.
+            Te mantenemos informado del estado de tu pedido por WhatsApp.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-bold text-ink-900">5. Garantia</h2>
+          <p class="mt-3 leading-relaxed text-ink-700">
+            Los productos cuentan con garantia de 1 mes a partir de la fecha de compra, salvo
+            aquellos que esten expresamente marcados como sin garantia en su descripcion dentro
+            del catalogo. Si tienes dudas sobre la garantia de un producto en particular,
+            preguntanos antes de comprar.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-bold text-ink-900">6. Datos del cliente</h2>
+          <p class="mt-3 leading-relaxed text-ink-700">
+            Eres responsable de brindar informacion precisa y actualizada durante el proceso de
+            compra, incluyendo tus datos de contacto y direccion de envio. Un dato incorrecto
+            puede retrasar o impedir la entrega de tu pedido.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-bold text-ink-900">7. Cambios y devoluciones</h2>
+          <p class="mt-3 leading-relaxed text-ink-700">
+            Cualquier situacion relacionada con cambios, devoluciones o un producto que llegue en
+            mal estado se resuelve directamente por WhatsApp, evaluando cada caso segun el
+            producto y la garantia aplicable.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-bold text-ink-900">8. Cambios en estos terminos</h2>
+          <p class="mt-3 leading-relaxed text-ink-700">
+            Podemos actualizar estos terminos en cualquier momento para reflejar cambios en como
+            operamos. La version vigente es siempre la publicada en esta pagina, con su fecha de
+            ultima actualizacion.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-bold text-ink-900">9. Contacto</h2>
+          <p class="mt-3 leading-relaxed text-ink-700">
+            ¿Tienes dudas sobre estos terminos? Escribenos por WhatsApp.
+          </p>
+          <a
+            href={buildWhatsAppLink(generalWhatsAppMessage())}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-whatsapp mt-4"
+          >
+            Escribir por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

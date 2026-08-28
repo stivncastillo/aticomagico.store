@@ -1,0 +1,14 @@
+{
+  "name": "Rizadora Colores",
+  "price": 24000,
+  "category": "Belleza",
+  "description": "Rizadora de colores, te permite transformar tu cabello como un profesional, con la ayuda de su guía espiral innovadora, obtendrás rizos sin esfuerzo y tendrás tu cabello bien en todo momento.",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Rizadora Colores",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/193889d021e-variedadestvcali-6hu0v8e41q4-fcqd1eg1i2j.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/193889d021e-variedadestvcali-6hu0v8e41q4-fcqd1eg1i2j.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/193889d06ae-variedadestvcali-6hu0v8e41q4-mve69lhp2so.png"
+  ]
+}

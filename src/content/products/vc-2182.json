@@ -1,0 +1,14 @@
+{
+  "name": "Sanduchera Doble",
+  "price": 47000,
+  "category": "Cocina",
+  "description": "Sanduchera doble",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Sanduchera Doble",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1958cc49a5c-variedadestvcali-bre94o4v46-kg6a925csc8.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1958cc49a5c-variedadestvcali-bre94o4v46-kg6a925csc8.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1958cc49676-variedadestvcali-bre94o4v46-2cgcjkwhqxs.png"
+  ]
+}

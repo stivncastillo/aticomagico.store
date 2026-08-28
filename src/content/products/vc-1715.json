@@ -1,0 +1,14 @@
+{
+  "name": "Comedero Mascota Con Temporizador",
+  "price": 45000,
+  "category": "Mascota",
+  "description": "Comedero de mascota, con temporizador, requiere 1 pila AA",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Comedero Mascota Con Temporizador",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19a731fed34-variedadestvcali-a1mf3q126jn-xwckrg3vq7s.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19a731fed34-variedadestvcali-a1mf3q126jn-xwckrg3vq7s.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19a731fe9a2-variedadestvcali-a1mf3q126jn-7ghzzgjp4tu.png"
+  ]
+}

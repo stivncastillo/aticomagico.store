@@ -1,0 +1,10 @@
+{
+  "name": "Molino Para Café",
+  "price": 36000,
+  "category": "Cocina",
+  "description": "Molino triturador eléctrico para moler café, 150w",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Molino Para Café",
+  "image": "https://firebasestorage.googleapis.com/v0/b/mi-catalogo-1f031.appspot.com/o/variedades_tv_cali-igebhjnvmsf-aqsx238exo.png?alt=media&token=2704e430-a69b-40bf-bdd1-f01648aa7820"
+}

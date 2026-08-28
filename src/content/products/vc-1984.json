@@ -1,0 +1,14 @@
+{
+  "name": "Lonchera Portacomidas X4",
+  "price": 58000,
+  "category": "Hogar",
+  "description": "Juego de portacomidas x4, Medidas: pequeño contenedor (13 onzas/1.6 tazas) contenedor grande (20 onzas/2.5 tazas)",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Lonchera Portacomidas X4",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19e9ded51df-variedadestvcali-5itvm9s3tu-jq6ngclp1b.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19e9ded51df-variedadestvcali-5itvm9s3tu-jq6ngclp1b.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19e9ded5bc5-variedadestvcali-5itvm9s3tu-o231e30bzk.png"
+  ]
+}

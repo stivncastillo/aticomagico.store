@@ -1,0 +1,14 @@
+{
+  "name": "Cafetera Kpi-9",
+  "price": 42000,
+  "category": "Cocina",
+  "description": "Cafetera para café, medida: 21cmx17cm, capacidad de 450ml para 9 tazas El café moka se produce utilizando únicamente vapor a presión natural",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Cafetera Kpi-9",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19c8809da3c-variedadestvcali-kmp3zxs7ql-crrl281ierh.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19c8809da3c-variedadestvcali-kmp3zxs7ql-crrl281ierh.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19c8809d722-variedadestvcali-kmp3zxs7ql-98egk5spsj.png"
+  ]
+}

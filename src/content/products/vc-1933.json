@@ -1,0 +1,14 @@
+{
+  "name": "Extractor De Leche",
+  "price": 50000,
+  "category": "Hogar",
+  "description": "Extractor de leche eléctrico y recargable, incluye biberón de 180ml",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Extractor De Leche",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/197d090d425-variedadestvcali-2up5dwrwtis-9wzbyyj9vtf.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/197d090d425-variedadestvcali-2up5dwrwtis-9wzbyyj9vtf.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/197d090d1f8-variedadestvcali-2up5dwrwtis-t4nqvc2e5lo.png"
+  ]
+}

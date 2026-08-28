@@ -1,0 +1,16 @@
+{
+  "name": "Sellador Al Vacio",
+  "price": 36000,
+  "category": "Hogar",
+  "description": "Sellador al vacío recargable, incluye 5 bolsas de\n23x23",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Sellador Al Vacio",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19ba3c06ff5-variedadestvcali-x9ii0bp7ncc-o152mwwx4z.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19ba3c06ff5-variedadestvcali-x9ii0bp7ncc-o152mwwx4z.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19ba3c07649-variedadestvcali-x9ii0bp7ncc-0x6cfiiztytq.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19ba3c07db1-variedadestvcali-x9ii0bp7ncc-f5jwhr3dwvd.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19ba3c09815-variedadestvcali-x9ii0bp7ncc-hjmetzvh2u4.png"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Sarten Doble Corazon",
+  "price": 38000,
+  "category": "Cocina",
+  "description": "Sarten doble cara de corazón, sartén de doble cara está hecha de material de acero inoxidable, con una superficie antiadherente que le permite cocinar un sándwich tostado.",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Sarten Doble Corazon",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19b4c7376ed-variedadestvcali-no840qvjx0o-tlxrox9clp9.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19b4c7376ed-variedadestvcali-no840qvjx0o-tlxrox9clp9.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19b4c737205-variedadestvcali-no840qvjx0o-nq721x0do5m.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19b4c737d43-variedadestvcali-no840qvjx0o-5dkm76bjgwr.png"
+  ]
+}

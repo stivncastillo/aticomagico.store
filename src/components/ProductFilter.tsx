@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import AddToCartButton from "@/components/cart/AddToCartButton";
-import { PUBLIC_WHATSAPP_NUMBER } from "astro:env/client";
 
 export interface ProductItem {
   slug: string;
@@ -27,11 +26,6 @@ function formatPrice(value: number, locale: string, currency: string) {
     currency,
     maximumFractionDigits: 0,
   }).format(value);
-}
-
-function whatsappLink(name: string) {
-  const message = `Hola! Vi "${name}" en el catalogo de Atico Magico y quiero comprarlo. ¿Sigue disponible?`;
-  return `https://wa.me/${PUBLIC_WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 
 export default function ProductFilter({ products, locale, currency }: Props) {
@@ -166,20 +160,7 @@ export default function ProductFilter({ products, locale, currency }: Props) {
                     </div>
                   </div>
                   <div className="mt-2 flex items-center gap-2">
-                    <a
-                      href={whatsappLink(product.name)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={
-                        "flex-1 inline-flex items-center justify-center gap-1.5 rounded-full bg-brand-500 px-3 py-2 text-xs font-semibold text-white transition hover:bg-brand-700 sm:text-sm" +
-                        (!product.inStock
-                          ? " pointer-events-none opacity-40"
-                          : "")
-                      }
-                    >
-                      Comprar
-                    </a>
-                    <AddToCartButton product={product} variant="compact" />
+                    <AddToCartButton product={product} variant="block" />
                   </div>
                 </div>
               </article>

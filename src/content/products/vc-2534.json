@@ -1,0 +1,15 @@
+{
+  "name": "Masajeador Ultrasonido",
+  "price": 59000,
+  "category": "Belleza",
+  "description": "Dispositivo 3 en 1 de masajeador de cuerpo ultrasónico, infrarrojo, electroestimulación y Cavitación, facial y corporal. Trae un manual en el idioma ingles",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Masajeador Ultrasonido",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1951abcadac-variedadestvcali-gk5tao31o5b-du5nsoqkhbd.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1951abcadac-variedadestvcali-gk5tao31o5b-du5nsoqkhbd.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1951abcb176-variedadestvcali-gk5tao31o5b-inbl169is2p.png",
+    "https://firebasestorage.googleapis.com/v0/b/mi-catalogo-1f031.appspot.com/o/variedades_tv_cali-gk5tao31o5b-h2vmcicccxf.png?alt=media&token=0ca09089-8bc6-4962-b2d7-3c65f590712b"
+  ]
+}

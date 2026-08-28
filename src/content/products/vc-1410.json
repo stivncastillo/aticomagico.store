@@ -1,0 +1,14 @@
+{
+  "name": "Estufa Eléctrica Sokany",
+  "price": 89000,
+  "category": "Sokany",
+  "description": "Estufa eléctrica de 2 boquillas, nivel de calor ajustable",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Estufa Eléctrica Sokany",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/193224c8465-variedadestvcali-5wwik075z5-u430v8l8ds.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/193224c8465-variedadestvcali-5wwik075z5-u430v8l8ds.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/193224c8822-variedadestvcali-5wwik075z5-6gqzqezv596.png"
+  ]
+}

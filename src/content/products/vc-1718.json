@@ -1,0 +1,15 @@
+{
+  "name": "Cosmetiquera Viajera X3",
+  "price": 29000,
+  "category": "Belleza",
+  "description": "Cosmetiquera viajera, color blanco, negro y rosado, en 3 medidas: grande 21x30cm, mediano 15x26cm y pequeña 12x22cm",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Cosmetiquera Viajera X3",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedades_tv_cali/18b64f12177-variedades_tv_cali-8q36m7207gf-wflmmmjkq2r.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedades_tv_cali/18b64f12177-variedades_tv_cali-8q36m7207gf-wflmmmjkq2r.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedades_tv_cali/18b64f15598-variedades_tv_cali-8q36m7207gf-weaatdjhek.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedades_tv_cali/18b64f16cee-variedades_tv_cali-8q36m7207gf-bzy5pa9hynk.png"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Organizador Utensilios",
+  "price": 24000,
+  "category": "Cocina",
+  "description": "Estante organizador de utencilios multifuncional con 3 divisiones",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Organizador Utensilios",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1985db0d3a0-variedadestvcali-7cqywmznja-rsxwox85lxq.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1985db0d3a0-variedadestvcali-7cqywmznja-rsxwox85lxq.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1985db0c9e0-variedadestvcali-7cqywmznja-eb95zuvdht.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1985db0cdf7-variedadestvcali-7cqywmznja-qrirykhrdsj.png"
+  ]
+}

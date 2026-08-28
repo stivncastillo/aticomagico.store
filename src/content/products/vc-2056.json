@@ -1,0 +1,15 @@
+{
+  "name": "Organizador De Libros",
+  "price": 40000,
+  "category": "Hogar",
+  "description": "Organizador De Libros",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Organizador De Libros",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19877c2b122-variedadestvcali-m65x10kpa6m-esxbretbbii.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19877c2b122-variedadestvcali-m65x10kpa6m-esxbretbbii.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19877c2a9bf-variedadestvcali-m65x10kpa6m-9rirzm2ii67.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19877c2ad41-variedadestvcali-m65x10kpa6m-pzvhcrbbg7.png"
+  ]
+}

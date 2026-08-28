@@ -1,0 +1,15 @@
+{
+  "name": "Organizador Utensilios Metálico",
+  "price": 28000,
+  "category": "Cocina",
+  "description": "Organizador Utensilios Metálico",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Organizador Utensilios Metálico",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1985db1c9d0-variedadestvcali-gj82j9r9yzv-v422q0pqcp.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1985db1c9d0-variedadestvcali-gj82j9r9yzv-v422q0pqcp.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1985db1c5c3-variedadestvcali-gj82j9r9yzv-exr12y9dojh.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1985db1cdc6-variedadestvcali-gj82j9r9yzv-qgzlux4wc5.png"
+  ]
+}

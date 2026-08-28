@@ -1,0 +1,15 @@
+{
+  "name": "Gramera Digital Zd-1",
+  "price": 36000,
+  "category": "Cocina",
+  "description": "Gramera digital con pilas, ideal para alimentos, peso máximo 5000g",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Gramera Digital Zd-1",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19d44b9c1d1-variedadestvcali-tbcwi5x4kc-hbr6x11uv75.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19d44b9c1d1-variedadestvcali-tbcwi5x4kc-hbr6x11uv75.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19d44b9c592-variedadestvcali-tbcwi5x4kc-vvopk3at1i.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19d44b9cd95-variedadestvcali-tbcwi5x4kc-972kw4vywd.png"
+  ]
+}

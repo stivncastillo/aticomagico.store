@@ -1,0 +1,14 @@
+{
+  "name": "Tabla Base De Deporte",
+  "price": 89000,
+  "category": "Deporte",
+  "description": "Base para deportes, ideal para ejercicio de brazo y abdomen",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Tabla Base De Deporte",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19388809bba-variedadestvcali-kgyl710wp7k-wsd0qtjyllb.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19388809bba-variedadestvcali-kgyl710wp7k-wsd0qtjyllb.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19388809ff2-variedadestvcali-kgyl710wp7k-iyav9p5jr1.png"
+  ]
+}

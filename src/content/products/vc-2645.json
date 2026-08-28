@@ -1,0 +1,14 @@
+{
+  "name": "Lampara De Gancho",
+  "price": 46000,
+  "category": "Belleza",
+  "description": "Lámpara de escritorio lampara de maquillaje circular usb",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Lampara De Gancho",
+  "image": "https://firebasestorage.googleapis.com/v0/b/mi-catalogo-1f031.appspot.com/o/variedades_tv_cali-da4un68ine-35tsvlgl8o3.png?alt=media&token=747f4c44-4465-4141-b91d-8efb108bd063",
+  "images": [
+    "https://firebasestorage.googleapis.com/v0/b/mi-catalogo-1f031.appspot.com/o/variedades_tv_cali-da4un68ine-35tsvlgl8o3.png?alt=media&token=747f4c44-4465-4141-b91d-8efb108bd063",
+    "https://firebasestorage.googleapis.com/v0/b/mi-catalogo-1f031.appspot.com/o/variedades_tv_cali-da4un68ine-ichcjhsgf6.png?alt=media&token=eb008ab7-be2f-4922-8e1c-d6e17fa432bb"
+  ]
+}

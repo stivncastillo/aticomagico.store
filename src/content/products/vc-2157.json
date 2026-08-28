@@ -1,0 +1,14 @@
+{
+  "name": "Hervidor Agua Electrico Sokany",
+  "price": 55000,
+  "category": "Sokany",
+  "description": "Hervidor de agua, capacidad de 2L, poder de 1500w, apagado automático, lampara indicadora de calentamiento, vaso de vidrio",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Hervidor Agua Electrico Sokany",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19977d6e4bc-variedadestvcali-29rnwgtrhfp-16fhpj93yqm.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19977d6e4bc-variedadestvcali-29rnwgtrhfp-16fhpj93yqm.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19977d6e8c2-variedadestvcali-29rnwgtrhfp-287b5ejexvs.png"
+  ]
+}
