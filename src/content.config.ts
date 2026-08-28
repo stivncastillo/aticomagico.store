@@ -13,6 +13,10 @@ const products = defineCollection({
     // Cuando tengas fotos reales, ponlas en /public/images/productos/
     // y cambia este valor a algo como "/images/productos/mi-producto.jpg"
     image: z.string().default("https://placehold.co/600x600/1a1a1a/ffffff?text=Atico+Magico"),
+    // Fotos adicionales para el carousel de la pagina de producto (la
+    // primera suele repetir `image`, la portada). Si no hay, el carousel
+    // muestra solo `image`.
+    images: z.array(z.string()).optional(),
     imageAlt: z.string().optional(),
     featured: z.boolean().default(false),
     inStock: z.boolean().default(true),

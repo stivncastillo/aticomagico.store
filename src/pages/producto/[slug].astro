@@ -6,6 +6,7 @@ import ProductCard from "@/components/ProductCard.astro";
 import { siteConfig } from "@/lib/config";
 import { buildWhatsAppLink, productWhatsAppMessage } from "@/lib/whatsapp";
 import AddToCartButton from "@/components/cart/AddToCartButton";
+import ProductGallery from "@/components/ProductGallery";
 
 export async function getStaticPaths() {
   const products = await getCollection("products");
@@ -38,13 +39,11 @@ const formatter = new Intl.NumberFormat(siteConfig.locale, {
     </a>
 
     <div class="mt-6 grid gap-10 lg:grid-cols-2">
-      <div class="aspect-square overflow-hidden rounded-3xl bg-black/5">
-        <img
-          src={data.image}
-          alt={data.imageAlt || data.name}
-          class="h-full w-full object-cover"
-        />
-      </div>
+      <ProductGallery
+        client:load
+        images={data.images && data.images.length > 0 ? data.images : [data.image]}
+        alt={data.imageAlt || data.name}
+      />
 
       <div>
         <p class="text-xs font-medium uppercase tracking-wide text-brand-600">{data.category}</p>

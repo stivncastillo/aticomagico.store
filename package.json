@@ -8,7 +8,10 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "scrape": "node scripts/scrape-vercatalogo.mjs",
+    "scrape:deep": "node scripts/scrape-vercatalogo.mjs --deep",
+    "import-catalogo": "node scripts/import-excel.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^6.0.4",
@@ -22,6 +25,8 @@
   },
   "devDependencies": {
     "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.5"
+    "@types/react-dom": "^19.2.5",
+    "playwright": "^1.48.0",
+    "xlsx": "^0.18.5"
   }
 }

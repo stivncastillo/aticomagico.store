@@ -97,6 +97,190 @@ Codigo relacionado:
   (variante `compact` en las tarjetas, `full` con selector de cantidad en el
   detalle de producto).
 
+## Scraper de productos (actualizar catalogo automaticamente)
+
+Actualizar el catalogo desde el proveedor/mayorista es un proceso de **dos
+pasos**, con un Excel en el medio para que vos decidas precios y categorias
+antes de que nada se publique en la tienda:
+
+1. **`npm run scrape`** — abre el catalogo de
+   [vercatalogo.com](https://vercatalogo.com), lee todos los productos
+   (nombre, precio de mayorista, categoria, imagen) y los escribe/actualiza
+   en un Excel: `data/productos-proveedor.xlsx`. **No toca la tienda.**
+2. **Vos editas el Excel** a mano: precio de venta, categoria, si esta
+   destacado, si esta disponible, si se publica o no.
+3. **`npm run import-catalogo`** — lee ese Excel y crea/actualiza los
+   archivos de `src/content/products/` (o los borra, si marcaste un producto
+   para no publicarlo). Recien ahi los cambios llegan a la tienda.
+
+### Configuracion (una sola vez)
+
+```bash
+npm install
+npx playwright install chromium
+```
+
+`npx playwright install chromium` descarga el navegador que usa el script
+para leer la pagina (el catalogo del proveedor carga los productos con
+JavaScript, por eso hace falta un navegador real y no alcanza con pedir el
+HTML). Puede pesar ~150-300MB, es normal que tarde un rato la primera vez.
+
+### Paso 1: traer los productos del proveedor al Excel
+
+```bash
+npm run scrape
+```
+
+Esto:
+1. Abre el catalogo, acepta el aviso de cookies si aparece.
+2. Hace clic en "Ver mas" hasta cargar todo el catalogo.
+3. Lee codigo, nombre, precio de mayorista, categoria e imagen de cada
+   tarjeta.
+4. Escribe (o actualiza) `data/productos-proveedor.xlsx`, con una fila por
+   producto y estas columnas:
+
+   | Columna                 | Quien la llena       | Que es |
+   |--------------------------|-----------------------|--------|
+   | `codigo`                 | el scraper            | codigo interno del proveedor (no lo edites, es la clave para no duplicar productos) |
+   | `nombre`                 | el scraper            | nombre tal cual aparece en el catalogo del proveedor |
+   | `categoria`               | vos (opcional)         | si la dejas vacia, el scraper pone la del proveedor |
+   | `precio_mayorista`        | el scraper             | precio del proveedor, de referencia — **no es el precio de venta** |
+   | `precio_venta`            | **vos**                | el precio que se muestra en la tienda. Si lo dejas vacio, usa `precio_mayorista` |
+   | `imagen`                  | el scraper             | URL de la foto principal (portada) |
+   | `imagenes`                 | el scraper (modo `--deep`) / vos | fotos extra para el carousel del producto, **separadas por coma `,` o punto y coma `;`** (ej: `url1, url2; url3`). Solo se llena sola si el producto tiene mas de 1 foto en el proveedor y corriste `npm run scrape:deep`. Podes agregar o editar las URLs a mano. Si la dejas vacia, la pagina del producto muestra solo la portada, sin carousel |
+   | `descripcion`              | vos (opcional)          | si la dejas vacia, se usa el `nombre` como descripcion |
+   | `destacado`                | **vos**                | `TRUE`/`FALSE` — si aparece en la seccion de destacados |
+   | `disponible`                | **vos**                | `TRUE`/`FALSE` — si esta en stock |
+   | `publicar`                   | **vos**                | `TRUE`/`FALSE` — si `FALSE`, el producto se borra de la tienda al importar |
+   | `en_catalogo_proveedor`       | el scraper             | `TRUE` si el proveedor lo sigue teniendo, `FALSE` si desaparecio de su catalogo (no se borra solo — es un aviso para que decidas) |
+
+   Correr `npm run scrape` de nuevo **nunca te pisa** `categoria`,
+   `precio_venta`, `destacado`, `disponible` ni `publicar` si ya los habias
+   editado — solo actualiza lo que viene del proveedor (nombre, precio de
+   mayorista, imagen) y agrega productos nuevos.
+5. Al final imprime un resumen: cuantos productos son nuevos, cuantos se
+   actualizaron, y cuantos ya no estan en el catalogo del proveedor.
+
+### Paso 2: revisar el Excel
+
+Abre `data/productos-proveedor.xlsx` (Excel, Numbers, Google Sheets, lo que
+uses) y completa/ajusta `precio_venta`, `categoria`, `destacado`,
+`disponible` y `publicar` como quieras. Los productos nuevos vienen con
+`publicar = TRUE` por defecto — si no quieres publicar alguno todavia,
+ponle `FALSE`.
+
+### Paso 3: pasar el Excel a la tienda
+
+```bash
+npm run import-catalogo
+```
+
+Esto lee el Excel y, por cada fila:
+- Si `publicar` es `TRUE` (o esta vacio): crea o actualiza
+  `src/content/products/vc-<codigo>.json` con los datos de esa fila.
+- Si `publicar` es `FALSE`: borra ese archivo si existia (el producto deja
+  de aparecer en la tienda, pero la fila se queda en el Excel por si despues
+  lo quieres volver a publicar).
+- Si falta el codigo, el nombre, o no hay ningun precio valido: se salta esa
+  fila y lo avisa al final, sin frenar el resto.
+
+Al terminar corre `npm run build` (o `npm run dev` si ya lo tienes abierto)
+para ver los productos actualizados.
+
+### Descripciones reales y fotos extra / carousel (opcional, mas lento)
+
+Por defecto el scraper solo trae la foto principal de cada producto (la
+del listado) y no trae su descripcion real (el listado tampoco la
+muestra). Si los quieres, corre:
+
+```bash
+npm run scrape:deep
+```
+
+Esto abre cada producto uno por uno en el catalogo del proveedor y trae:
+
+- Su descripcion real, guardada en la columna `descripcion`.
+- Si tiene mas de una foto, todas esas fotos extra, guardadas en la
+  columna `imagenes` (separadas por `;`) — son las que arman el carousel
+  en la pagina del producto.
+
+Ojo: cada vez que corras `npm run scrape:deep`, estas dos columnas se
+actualizan con lo que haya en el proveedor **en ese momento** — si le
+habias hecho cambios a mano a la descripcion o a las fotos de un
+producto, un `scrape:deep` posterior te las pisa. Si no quieres que un
+producto en particular se toque, no vuelvas a correr `--deep` para ese
+producto (o guarda tu version aparte antes de correrlo de nuevo).
+
+Correr `npm run scrape:deep` tarda bastante mas que el modo normal — con
+cientos de productos puede tomar varios minutos.
+
+### Carousel de fotos en la pagina del producto
+
+Si un producto tiene mas de una foto (columna `imagenes` con al menos 2
+URLs), su pagina muestra un carousel: flechas para ir a la foto anterior
+o siguiente, puntos indicadores, contador ("2 / 4") y deslizar con el
+dedo en celular. Si solo tiene una foto (o `imagenes` esta vacia), se ve
+como antes: una sola imagen fija, sin controles.
+
+Podes armar la columna `imagenes` de dos formas: dejando que
+`npm run scrape:deep` la traiga sola del proveedor, o escribiendola vos
+mismo a mano en el Excel — poné las URLs de las fotos separadas por coma
+`,` o punto y coma `;`, por ejemplo:
+
+```
+https://miurl.com/foto1.jpg, https://miurl.com/foto2.jpg; https://miurl.com/foto3.jpg
+```
+
+Despues corre `npm run import-catalogo` como siempre para que el cambio
+llegue al sitio.
+
+### Automatizarlo (que el Paso 1 corra solo todos los dias)
+
+El scraper (Paso 1) no se ejecuta solo — hay que decirle al Mac que lo
+corra. La forma mas simple en macOS es `launchd`. Crea un archivo
+`~/Library/LaunchAgents/com.aticomagico.scrape.plist` con algo como:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.aticomagico.scrape</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/local/bin/npm</string>
+    <string>run</string>
+    <string>scrape</string>
+  </array>
+  <key>WorkingDirectory</key><string>/Users/TU_USUARIO/Projects/frontend/aticomagico</string>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key><integer>7</integer>
+    <key>Minute</key><integer>0</integer>
+  </dict>
+  <key>StandardOutPath</key><string>/tmp/aticomagico-scrape.log</string>
+  <key>StandardErrorPath</key><string>/tmp/aticomagico-scrape.log</string>
+</dict>
+</plist>
+```
+
+Y lo activas con `launchctl load ~/Library/LaunchAgents/com.aticomagico.scrape.plist`
+(ajusta la ruta de `npm` con `which npm` y `WorkingDirectory` a tu carpeta
+real). Corre todos los dias a las 7:00am y deja el log en
+`/tmp/aticomagico-scrape.log`. Ojo: esto solo automatiza el Paso 1 (llenar el
+Excel) — revisar el Excel y correr `npm run import-catalogo` siguen siendo
+pasos manuales, a proposito, para que nada se publique sin que lo revises.
+Si prefieres no automatizar nada todavia, tambien esta perfecto correr
+`npm run scrape` a mano cuando quieras.
+
+### Si el proveedor cambia su pagina
+
+El scraper lee la pagina por su estructura HTML actual (nombres de clases
+como `.slide-q-card`, `.product-name`, `.view-more-container`, etc.). Si el
+proveedor rediseña su sitio, el script puede dejar de encontrar los
+productos o de cargar el catalogo completo — no se rompe el resto de la
+tienda, simplemente no actualiza el Excel. Si eso pasa, avisame y lo ajusto.
+
 ## Build / deploy
 
 ```bash
