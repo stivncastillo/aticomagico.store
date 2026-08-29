@@ -11,9 +11,9 @@ export function buildWhatsAppLink(message: string, phone: string = PUBLIC_WHATSA
 }
 
 export function productWhatsAppMessage(productName: string) {
-  return `Hola! Vi "${productName}" en el catalogo de Atico Magico y quiero comprarlo. ¿Sigue disponible?`;
+  return `Hola! Vi "${productName}" en el catalogo de Ático Mágico y quiero comprarlo. ¿Sigue disponible?`;
 }
 
 export function generalWhatsAppMessage() {
-  return "Hola! Quiero saber mas sobre los productos de Atico Magico.";
+  return "Hola! Quiero saber mas sobre los productos de Ático Mágico.";
 }

@@ -1,13 +1,12 @@
 ---
 import { Image } from "astro:assets";
 import { MessageCircle } from "@lucide/astro";
-import InstagramIcon from "@/components/icons/InstagramIcon.astro";
 import { siteConfig } from "@/lib/config";
 import { buildWhatsAppLink, generalWhatsAppMessage } from "@/lib/whatsapp";
 import heroImage from "@/assets/hero.png";
 ---
 
-<section class="border-b border-black/5 bg-linear-to-b from-brand-50 to-transparent">
+<section class="border-b border-black/5 bg-linear-to-b from-brand-100 to-transparent">
   <div class="container-page grid items-center gap-10 py-16 sm:py-24 lg:grid-cols-2">
     <div>
       <h1 class="text-4xl font-extrabold tracking-tight text-ink-900 sm:text-5xl">
@@ -28,15 +27,6 @@ import heroImage from "@/assets/hero.png";
         >
           <MessageCircle class="h-4 w-4" />
           Escribir por WhatsApp
-        </a>
-        <a
-          href={siteConfig.instagramUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn-secondary"
-        >
-          <InstagramIcon class="h-4 w-4" />
-          Instagram
         </a>
       </div>
     </div>

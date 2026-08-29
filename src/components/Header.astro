@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import { MessageCircle } from "@lucide/astro";
+import { MessageCircle, LayoutList } from "@lucide/astro";
 import InstagramIcon from "@/components/icons/InstagramIcon.astro";
 import CartWidget from "@/components/cart/CartWidget";
 import { siteConfig } from "@/lib/config";
@@ -16,7 +16,8 @@ const currentPath = Astro.url.pathname;
 
 <header class="sticky top-0 z-40 border-b border-black/5 bg-white/80 backdrop-blur">
   <div class="container-page flex h-16 items-center justify-between">
-    <a href="/" class="flex items-center" aria-label={siteConfig.name}>
+    <div class="flex flex-row gap-8">
+      <a href="/" class="flex items-center" aria-label={siteConfig.name}>
       <Image src={logo} alt={siteConfig.name} height={40} width={73} class="h-9 w-auto sm:h-10" />
     </a>
 
@@ -35,6 +36,7 @@ const currentPath = Astro.url.pathname;
         ))
       }
     </nav>
+    </div>
 
     <div class="flex items-center gap-3">
       <a
@@ -48,7 +50,7 @@ const currentPath = Astro.url.pathname;
       </a>
       <CartWidget client:load />
       <a href="/catalogo" class="btn-primary px-4! py-2! text-xs sm:text-sm">
-        <MessageCircle class="h-4 w-4" />
+        <LayoutList class="h-4 w-4" />
         Ver catalogo
       </a>
     </div>

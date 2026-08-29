@@ -1,7 +1,7 @@
 // Configuracion general de la tienda.
 // Cambia estos valores por los datos reales del negocio.
 export const siteConfig = {
-  name: "Atico Magico",
+  name: "Ático Mágico",
   tagline: "Objetos con encanto para tu espacio",
   description:
     "Catalogo de productos de Ático Mágico. Elige lo que te gusta y compra directo por WhatsApp.",
