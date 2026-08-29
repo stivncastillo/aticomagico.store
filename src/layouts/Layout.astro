@@ -14,7 +14,7 @@ interface Props {
 const {
   title,
   description = siteConfig.description,
-  image = "/og-image.jpg",
+  image = "/og-image.png",
 } = Astro.props;
 
 const pageTitle = title === siteConfig.name ? title : `${title} · ${siteConfig.name}`;
