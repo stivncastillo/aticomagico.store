@@ -18,10 +18,10 @@ const products = allProducts.map((p) => ({
 }));
 ---
 
-<Layout title="Catalogo" description={`Todos los productos disponibles de ${siteConfig.name}.`}>
+<Layout title="Catálogo" description={`Todos los productos disponibles de ${siteConfig.name}.`}>
   <section class="container-page py-12 sm:py-16">
-    <h1 class="text-3xl font-extrabold text-ink-900 sm:text-4xl">Catalogo</h1>
-    <p class="mt-2 text-ink-700">Explora todos los productos disponibles.</p>
+    <h1 class="text-3xl font-extrabold text-ink-900 sm:text-4xl">Catálogo</h1>
+    <p class="mt-2 text-ink-700">Explora todo lo que tenemos para armar tu paquetote.</p>
 
     <div class="mt-8">
       <ProductFilter client:load products={products} locale={siteConfig.locale} currency={siteConfig.currency} />

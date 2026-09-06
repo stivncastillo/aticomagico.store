@@ -87,7 +87,7 @@ export default function CartWidget() {
       <button
         type="button"
         onClick={() => setOpen(true)}
-        aria-label="Ver carrito"
+        aria-label="Ver mi paquetote"
         className="relative text-ink-700 transition hover:text-brand-600"
       >
         <BagIcon className="h-5 w-5" />
@@ -103,7 +103,7 @@ export default function CartWidget() {
           <div className="fixed inset-0 z-50">
           <button
             type="button"
-            aria-label="Cerrar carrito"
+            aria-label="Cerrar paquetote"
             onClick={() => setOpen(false)}
             className="absolute inset-0 bg-ink-900/40"
           />
@@ -114,21 +114,21 @@ export default function CartWidget() {
                 <button
                   type="button"
                   onClick={() => setStep("cart")}
-                  aria-label="Volver al carrito"
+                  aria-label="Volver al paquetote"
                   className="inline-flex items-center gap-1.5 text-sm font-semibold text-ink-900 transition hover:text-brand-600"
                 >
                   <ArrowLeftIcon className="h-4 w-4" />
-                  Tus datos de envio
+                  Tu paquetote
                 </button>
               ) : (
                 <p className="font-bold text-ink-900">
-                  Tu carrito{count > 0 ? ` (${count})` : ""}
+                  Tu paquetote{count > 0 ? ` (${count})` : ""}
                 </p>
               )}
               <button
                 type="button"
                 onClick={() => setOpen(false)}
-                aria-label="Cerrar carrito"
+                aria-label="Cerrar paquetote"
                 className="text-ink-700 transition hover:text-brand-600"
               >
                 <XIcon className="h-5 w-5" />
@@ -140,7 +140,7 @@ export default function CartWidget() {
                 <div className="flex-1 overflow-y-auto p-4">
                   {items.length === 0 ? (
                     <p className="mt-10 text-center text-sm text-ink-700">
-                      Tu carrito esta vacio. Agrega productos desde el catalogo.
+                      Tu paquetote esta esperando que lo llenes. No lo hagas sufrir.
                     </p>
                   ) : (
                     <ul className="space-y-4">
@@ -211,7 +211,7 @@ export default function CartWidget() {
                       className="btn-whatsapp mt-4 w-full"
                     >
                       <BagIcon className="h-4 w-4" />
-                      Continuar pedido
+                      Armar mi paquetote
                     </button>
 
                     <button
@@ -219,7 +219,7 @@ export default function CartWidget() {
                       onClick={clearCart}
                       className="mt-2 w-full text-center text-xs text-ink-700 transition hover:text-red-600"
                     >
-                      Vaciar carrito
+                      Vaciar paquetote
                     </button>
                   </div>
                 )}
@@ -227,7 +227,7 @@ export default function CartWidget() {
             ) : (
               <form onSubmit={handleSubmitForm} className="flex flex-1 flex-col overflow-y-auto p-4">
                 <p className="text-sm text-ink-700">
-                  Con estos datos armamos el mensaje de WhatsApp para coordinar tu envio.
+                  Con estos datos armamos tu paquetote y coordinamos el envio por WhatsApp.
                 </p>
 
                 <div className="mt-4 flex flex-1 flex-col gap-3">
@@ -298,7 +298,7 @@ export default function CartWidget() {
 
                   <button type="submit" className="btn-whatsapp mt-4 w-full">
                     <BagIcon className="h-4 w-4" />
-                    Enviar pedido por WhatsApp
+                    Enviar mi paquetote por WhatsApp
                   </button>
 
                   <p className="mt-3 text-center text-[11px] text-ink-700">

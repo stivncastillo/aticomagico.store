@@ -61,15 +61,20 @@ const formatter = new Intl.NumberFormat(siteConfig.locale, {
 
         {
           !data.inStock && (
-            <p class="mt-4 inline-block rounded-full bg-ink-900/90 px-3 py-1 text-xs font-semibold text-white">
-              Agotado por ahora
-            </p>
+            <div class="mt-4">
+              <p class="inline-block rounded-full bg-ink-900/90 px-3 py-1 text-xs font-semibold text-white">
+                Este ya volo
+              </p>
+              <p class="mt-2 text-sm text-ink-700">
+                Pero tranquilo, hay mas paquetote esperandote.
+              </p>
+            </div>
           )
         }
 
         <div class="mt-8">
           <p class="text-sm text-ink-700">
-            Agrega el producto al carrito y cierra tu pedido por WhatsApp cuando quieras.
+            Sumalo a tu paquetote y cierra el pedido por WhatsApp cuando quieras.
           </p>
           <AddToCartButton
             client:load
@@ -83,7 +88,7 @@ const formatter = new Intl.NumberFormat(siteConfig.locale, {
     {
       related.length > 0 && (
         <div class="mt-20">
-          <h2 class="text-xl font-bold text-ink-900">Tambien te puede gustar</h2>
+          <h2 class="text-xl font-bold text-ink-900">Esto tambien te va a antojar</h2>
           <div class="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 lg:grid-cols-4">
             {related.map((p) => (
               <ProductCard

@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/config";
 
 const navItems = [
   { href: "/", label: "Inicio" },
-  { href: "/catalogo", label: "Catalogo" },
+  { href: "/catalogo", label: "Catálogo" },
 ];
 
 const currentPath = Astro.url.pathname;
@@ -49,7 +49,7 @@ const currentPath = Astro.url.pathname;
       <CartWidget client:load />
       <a href="/catalogo" class="btn-primary px-4! py-2! text-xs sm:text-sm">
         <LayoutList class="h-4 w-4" />
-        Ver catalogo
+        Ver catálogo
       </a>
     </div>
   </div>

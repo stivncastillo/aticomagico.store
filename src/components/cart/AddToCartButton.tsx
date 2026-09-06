@@ -40,8 +40,8 @@ export default function AddToCartButton({ product, variant = "compact" }: Props)
         type="button"
         onClick={handleAdd}
         disabled={!product.inStock}
-        aria-label={`Agregar ${product.name} al carrito`}
-        title="Agregar al carrito"
+        aria-label={`Sumar ${product.name} a mi paquetote`}
+        title="Sumar a mi paquetote"
         className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-ink-900/10 bg-white text-ink-900 transition hover:border-brand-400 hover:text-brand-600 disabled:pointer-events-none disabled:opacity-40"
       >
         {justAdded ? <CheckIcon className="h-4 w-4 text-brand-600" /> : <BagIcon className="h-4 w-4" />}
@@ -61,7 +61,7 @@ export default function AddToCartButton({ product, variant = "compact" }: Props)
         className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-full bg-brand-500 px-3 py-2 text-xs font-semibold text-white transition hover:bg-brand-700 disabled:pointer-events-none disabled:opacity-40 sm:text-sm"
       >
         {justAdded ? <CheckIcon className="h-4 w-4" /> : <BagIcon className="h-4 w-4" />}
-        {justAdded ? "Agregado" : "Agregar"}
+        {justAdded ? "¡Tuyo!" : "A mi paquetote"}
       </button>
     );
   }
@@ -95,7 +95,7 @@ export default function AddToCartButton({ product, variant = "compact" }: Props)
         className="btn-secondary flex-1 disabled:pointer-events-none disabled:opacity-40"
       >
         {justAdded ? <CheckIcon className="h-4 w-4 text-brand-600" /> : <BagIcon className="h-4 w-4" />}
-        {justAdded ? "Agregado" : "Agregar al carrito"}
+        {justAdded ? "¡Ya es tuyo!" : "Agregar a mi paquetote"}
       </button>
     </div>
   );

@@ -78,7 +78,7 @@ export default function ProductFilter({ products, locale, currency }: Props) {
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Buscar producto..."
+          placeholder="¿Que se te antoja hoy?"
           className="w-full rounded-full border border-black/10 bg-white px-4 py-2.5 text-sm outline-none focus:border-brand-400"
         />
 
@@ -103,7 +103,7 @@ export default function ProductFilter({ products, locale, currency }: Props) {
 
       {filtered.length === 0 ? (
         <p className="mt-16 text-center text-sm text-ink-700">
-          No encontramos productos con esa busqueda.
+          No encontramos nada asi. Prueba con otra palabra.
         </p>
       ) : (
         <>
