@@ -1,4 +1,4 @@
-# Ático Mágico — tienda online
+# El Paquetote — tienda online
 
 Sitio estatico hecho con **Astro**, **Tailwind CSS v4** y **React** (para el filtro
 interactivo del catalogo). No tiene carrito de compras: cada producto tiene un boton

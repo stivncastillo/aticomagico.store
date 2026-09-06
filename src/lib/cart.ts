@@ -19,7 +19,7 @@ export interface CustomerInfo {
 
 type CartProduct = Omit<CartItem, "qty">;
 
-const STORAGE_KEY = "atico-magico:cart";
+const STORAGE_KEY = "el-paquetote:cart";
 const isBrowser = typeof window !== "undefined";
 
 let cartState: CartItem[] = [];

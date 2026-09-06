@@ -1,4 +1,5 @@
 import { PUBLIC_WHATSAPP_NUMBER } from "astro:env/client";
+import { siteConfig } from "./config";
 
 /**
  * Construye un link de WhatsApp (wa.me) con un mensaje pre-armado.
@@ -11,9 +12,9 @@ export function buildWhatsAppLink(message: string, phone: string = PUBLIC_WHATSA
 }
 
 export function productWhatsAppMessage(productName: string) {
-  return `Hola! Vi "${productName}" en el catalogo de Ático Mágico y quiero comprarlo. ¿Sigue disponible?`;
+  return `Hola! Vi "${productName}" en el catalogo de ${siteConfig.name} y quiero comprarlo. ¿Sigue disponible?`;
 }
 
 export function generalWhatsAppMessage() {
-  return "Hola! Quiero saber mas sobre los productos de Ático Mágico.";
+  return `Hola! Quiero saber mas sobre los productos de ${siteConfig.name}.`;
 }

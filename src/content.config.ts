@@ -12,7 +12,7 @@ const products = defineCollection({
     // Ruta de imagen: por defecto usamos un placeholder.
     // Cuando tengas fotos reales, ponlas en /public/images/productos/
     // y cambia este valor a algo como "/images/productos/mi-producto.jpg"
-    image: z.string().default("https://placehold.co/600x600/1a1a1a/ffffff?text=Atico+Magico"),
+    image: z.string().default("https://placehold.co/600x600/1a1a1a/ffffff?text=El+Paquetote"),
     // Fotos adicionales para el carousel de la pagina de producto (la
     // primera suele repetir `image`, la portada). Si no hay, el carousel
     // muestra solo `image`.
