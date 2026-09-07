@@ -1,8 +1,10 @@
 ---
+import { Image } from "astro:assets";
 import { MessageCircle, LayoutList } from "@lucide/astro";
 import InstagramIcon from "@/components/icons/InstagramIcon.astro";
 import CartWidget from "@/components/cart/CartWidget";
 import { siteConfig } from "@/lib/config";
+import logo from "@/assets/logo.png";
 
 const navItems = [
   { href: "/", label: "Inicio" },
@@ -15,8 +17,8 @@ const currentPath = Astro.url.pathname;
 <header class="sticky top-0 z-40 border-b border-black/5 bg-white/80 backdrop-blur">
   <div class="container-page flex h-16 items-center justify-between">
     <div class="flex flex-row gap-8">
-      <a href="/" class="flex items-center gap-1 text-xl font-extrabold tracking-tight text-ink-900 sm:text-2xl" aria-label={siteConfig.name}>
-      El <span class="text-brand-600">Paquetote</span>
+      <a href="/" class="flex items-center" aria-label={siteConfig.name}>
+      <Image src={logo} alt={siteConfig.name} height={80} width={100} class="h-9 w-auto sm:h-10" />
     </a>
 
     <nav class="hidden items-center gap-6 sm:flex">
