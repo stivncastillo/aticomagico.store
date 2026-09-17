@@ -1,0 +1,16 @@
+{
+  "name": "Mini Taladro",
+  "price": 105000,
+  "category": "Herramienta",
+  "description": "Destornillador recargable multifuncional, taladro de mano. 60W, taladro de 3/8, con percutor",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Mini Taladro",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19a31e78768-variedadestvcali-4l6fa8up1mi-vn8ewb4pzb.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19a31e78768-variedadestvcali-4l6fa8up1mi-vn8ewb4pzb.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19a27634caa-variedadestvcali-4l6fa8up1mi-5339rysoac.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19a31e78c63-variedadestvcali-4l6fa8up1mi-i73qdj68fl.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19a31e79114-variedadestvcali-4l6fa8up1mi-o839zqaegks.png"
+  ]
+}

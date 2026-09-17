@@ -1,0 +1,15 @@
+{
+  "name": "Plancha A Vapor",
+  "price": 115000,
+  "category": "Hogar",
+  "description": "Plancha a vapor, fácil de utilizar, diseño portátil y ligero, potencia de 1500w, con deposito de agua integrado",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Plancha A Vapor",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1a05e493c7b-variedadestvcali-pmf229urv3-fkmlqh6z485.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1a05e493c7b-variedadestvcali-pmf229urv3-fkmlqh6z485.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1a05e493ff0-variedadestvcali-pmf229urv3-xj7xdpwuha8.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1a05e4943ce-variedadestvcali-pmf229urv3-2dsiyhnodrq.png"
+  ]
+}

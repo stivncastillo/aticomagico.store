@@ -1,0 +1,14 @@
+{
+  "name": "Dispensador De Agua 201",
+  "price": 21000,
+  "category": "Cocina",
+  "description": "Dispensador de agua, recargable",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Dispensador De Agua 201",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/197d0d7cda1-variedadestvcali-jw6ol6spb7-mfbo5p8p6g9.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/197d0d7cda1-variedadestvcali-jw6ol6spb7-mfbo5p8p6g9.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/197d0d7d2b3-variedadestvcali-jw6ol6spb7-nu83cn160r.png"
+  ]
+}
