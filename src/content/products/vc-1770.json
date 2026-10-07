@@ -1,0 +1,15 @@
+{
+  "name": "Maleta Morral 809",
+  "price": 50000,
+  "category": "Hogar",
+  "description": "Maleta, con 3 compartimientos y 1 lateral para bebidas, capacidad de computador de 13”\nMedidas de: 44x30cm",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Maleta Morral 809",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19738dd0e84-variedadestvcali-imq74bphy3-l4qslfqlmas.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19738dd0e84-variedadestvcali-imq74bphy3-l4qslfqlmas.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19738dd0389-variedadestvcali-imq74bphy3-tji6sv97sf.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/19738dd06dd-variedadestvcali-imq74bphy3-bjgabog4dwe.png"
+  ]
+}
