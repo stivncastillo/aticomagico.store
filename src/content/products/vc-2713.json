@@ -1,0 +1,15 @@
+{
+  "name": "Zapatero Doble Luxury",
+  "price": 125000,
+  "category": "Hogar",
+  "description": "Zapatero pegable de 6 niveles, con doble compartimiento para almacenar, puertas en acrílico, con cierre magnético\n\nMedida de: 104cmx44cmx34cm",
+  "featured": true,
+  "inStock": true,
+  "imageAlt": "Zapatero Doble Luxury",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1a1553ff1f1-variedadestvcali-bvxzimidgf-o52z9bbptap.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1a1553ff1f1-variedadestvcali-bvxzimidgf-o52z9bbptap.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1a155400ce7-variedadestvcali-bvxzimidgf-36wif3soeq9.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1a1554028ba-variedadestvcali-bvxzimidgf-yedx9bwjw8d.png"
+  ]
+}
