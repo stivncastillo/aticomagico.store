@@ -1,9 +1,12 @@
 {
   "name": "Calentador Y Filtro De Agua",
   "price": 79000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Cocina",
   "description": "Grifo de agua caliente y fría con pantalla digital, llave co giro de 360 con filtro de agua. potencia de 3000W",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Calentador Y Filtro De Agua",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19b5bd8ec59-variedadestvcali-x12irv56k9k-zbsyouifgwj.png",

@@ -1,9 +1,12 @@
 {
   "name": "Set Belleza 21pcs (6341c) Maquillaje",
   "price": 32000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Juguetería / Niños",
   "description": "Set de maquillaje para niñas, contiene 21 piezas para la diversion de las niñas",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Set Belleza 21pcs (6341c) Maquillaje",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1a13cb49d8b-variedadestvcali-z7xpqads9b-ehin0g592qa.png",

@@ -1,9 +1,12 @@
 {
   "name": "Juguete Maleta Doctor (955a)",
   "price": 95000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Juguetería / Niños",
   "description": "Set de maleta de doctor 3 en 1 incluye accesorios, facil de montar, transportar y almacenar.\nMedidas: 66cmx21cmx50cm",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Juguete Maleta Doctor (955a)",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1a0915f5b8d-variedadestvcali-rgohmp6y0mp-gn3imhuv3e.png",

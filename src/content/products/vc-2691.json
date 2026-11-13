@@ -1,9 +1,12 @@
 {
   "name": "Carro Control Remoto (2062)",
   "price": 90000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Juguetería / Niños",
   "description": "💪 Potente diseño todoterreno, ideal para disfrutar aventuras y superar diferentes terrenos. Su estructura tipo buggy, llantas de gran tamaño y suspensión visible le dan una apariencia deportiva y aventurera.\n✨ Características:\n🎮 Control remoto para una conducción divertida.\n🛞 Llantas grandes con diseño todoterreno.\n🔩 Carrocería con detalles metálicos y estructura deportiva.\n🏜️ Diseño tipo buggy, ideal para juegos de aventura.\n🎁 Excelente opción para regalar a los amantes de los carros.",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Carro Control Remoto (2062)",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1a184c1ef7c-variedadestvcali-w3w75if3rm-sy16sqlveu.png",

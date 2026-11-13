@@ -1,9 +1,12 @@
 {
   "name": "Min Waflera 5 En 1 Sokany",
   "price": 110000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Sokany",
   "description": "Mini waflera Sokany 5 en 1, de 600w, calentador doble cara, fácil de limpiar, incluye 5 moldes para hacer diferentes figuras de wafles, antiadherente",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Min Waflera 5 En 1 Sokany",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19977c4975e-variedadestvcali-5d71wkc93k2-bc4vnp4hhw.png",

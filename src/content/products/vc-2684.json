@@ -1,9 +1,12 @@
 {
   "name": "Camion Monster Dinosaurio 233",
   "price": 96000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Juguetería / Niños",
   "description": "Camion monster temática de dinosaurios, con 6 ruedas grandes, incluye 6 figuras de dinosaurios, maletín organizador. Diseño llamativo, recomendado para niños mayores de 3 años",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Camion Monster Dinosaurio 233",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1a10f429290-variedadestvcali-t2hhbr1bre8-z6lzep180q.png",

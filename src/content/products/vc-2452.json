@@ -1,9 +1,12 @@
 {
   "name": "Dispensador De Comida Inteligente",
   "price": 225000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Mascota",
   "description": "Dispensador de comida automático con temporizador inteligente, cámara y láser, micrófono, con capacidad de 5L, video resolución 190x1080, incluye láser, poder de 10w",
   "featured": true,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Dispensador De Comida Inteligente",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19bf0787686-variedadestvcali-tsfa7kc97i-wsi6gcll3k.png",

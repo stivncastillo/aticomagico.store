@@ -1,9 +1,12 @@
 {
   "name": "Bolso Expandible Viajero",
   "price": 34000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Hogar",
   "description": "Bolsa de viaje plegable de gran capacidad hecha con tela oxford liviana, impermeable y resistente a rasgaduras.",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Bolso Expandible Viajero",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19fa1738de3-variedadestvcali-rp58hxz5rh-l7yk71947w9.png",

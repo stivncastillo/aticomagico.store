@@ -1,9 +1,12 @@
 {
   "name": "Mesa Auxiliar T6",
   "price": 62000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Mesas",
   "description": "Mesa plegable ajustable multiusos, 3 ángulos de ajuste\nMedidas: 53cmx52cm, expandida 73x52cm",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Mesa Auxiliar T6",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1982f5fcc56-variedadestvcali-ypd7ttomljm-f0u7xdqfed.png",

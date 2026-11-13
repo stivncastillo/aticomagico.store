@@ -1,9 +1,12 @@
 {
   "name": "Mesa Multifuncional Hdz-1",
   "price": 140000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Mesas",
   "description": "Mesa de cama para computador multifuncional plegable ajustable viene con una mini luz alimentada por USB y un mini ventilador. por un cable USB. Medidas: 60x40x37cm",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Mesa Multifuncional Hdz-1",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/199af9a1aaf-variedadestvcali-1sc3sqmeamq-ps7zioubnbg.png",

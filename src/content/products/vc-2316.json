@@ -1,9 +1,12 @@
 {
   "name": "Taladro Inalámbrico 36v",
   "price": 145000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Herramienta",
   "description": "Es reversible, tiene 2 velocidades, 2 baterías recargables de 36V, función para atornillar y desatornillar, función Percutor, taladro de media pulgada, con percutor",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Taladro Inalámbrico 36v",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19b17f8155a-variedadestvcali-0iy4vmqw2z7g-9y947ze7b79.png",

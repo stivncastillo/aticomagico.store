@@ -1,9 +1,12 @@
 {
   "name": "Batidor Portátil 2 En 1 Sokany 201a",
   "price": 28000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Sokany",
   "description": "Batidor Portátil 2 En 1 Sokany 201a",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Batidor Portátil 2 En 1 Sokany 201a",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19738d3b0d6-variedadestvcali-qxdgyp8pxc9-l6v33vao7ne.png",

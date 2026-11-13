@@ -1,9 +1,12 @@
 {
   "name": "Maleta Manos Libres 8886",
   "price": 32000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Hogar",
   "description": "Maleta Manos Libres 8886",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Maleta Manos Libres 8886",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/199e9931bce-variedadestvcali-vw2qs9hyvc-r13stotkygg.png",

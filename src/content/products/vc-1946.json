@@ -1,9 +1,12 @@
 {
   "name": "Maleta Mascota Ta",
   "price": 68000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Mascota",
   "description": "Maleta mascota, medida de 25x40x25cm",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Maleta Mascota Ta",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/197e2f754a8-variedadestvcali-84q5b99gwt8-d3t0abpss47.png",

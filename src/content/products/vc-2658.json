@@ -1,9 +1,12 @@
 {
   "name": "Set De Herramientas 46 Pcs",
   "price": 36000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Herramienta",
   "description": "Set De Herramientas 46 Pcs",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Set De Herramientas 46 Pcs",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19f3d33b94b-variedadestvcali-8jz9v8n113w-rq6l0yccgz.png",

@@ -1,9 +1,12 @@
 {
   "name": "Lampara Led Con Parlante",
   "price": 120000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Hogar",
   "description": "Lámpara led con parlante, reloj despertador y cargador inalámbrico de 15W",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Lampara Led Con Parlante",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19a3b8d6d42-variedadestvcali-5jslpmut1so-bbhiqpla1j.png",

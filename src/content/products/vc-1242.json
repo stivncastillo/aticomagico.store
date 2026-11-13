@@ -1,9 +1,12 @@
 {
   "name": "Candado Para Disco De Moto",
   "price": 32000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Herramienta",
   "description": "Candado Para Disco De Moto",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Candado Para Disco De Moto",
   "image": "https://firebasestorage.googleapis.com/v0/b/mi-catalogo-1f031.appspot.com/o/variedades_tv_cali-bo6ww88pqk5-huqk3mxovm.png?alt=media&token=50de3009-8495-435c-8ffc-d0e9a5ccd21a",

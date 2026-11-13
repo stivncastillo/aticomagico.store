@@ -1,9 +1,12 @@
 {
   "name": "Taladro Inalambrico 1300d",
   "price": 160000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Herramienta",
   "description": "Taladro inalámbrico con 2 baterías de 48V, incluye: Juego de copas hexagonales, Brocas de diferentes tamaños, Puntas de destornillador, Extensión flexible para zonas difíciles, taladro de 3/8 pulgadas, con percutor",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Taladro Inalambrico 1300d",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19e0848513f-variedadestvcali-ymj0ahggrh-m98141vkzqp.png",

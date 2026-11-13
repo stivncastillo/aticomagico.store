@@ -1,9 +1,12 @@
 {
   "name": "Caja Organizadora De Dinero",
   "price": 89000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Herramienta",
   "description": "Caja registradora metálica, 4 puestos para billetes y 5 puestos para monedas, medida de 24x30x10cm",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Caja Organizadora De Dinero",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19920058e3b-variedadestvcali-z0peh3cnt8-u4qwdrsde39.png",

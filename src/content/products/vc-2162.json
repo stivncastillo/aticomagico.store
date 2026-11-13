@@ -1,9 +1,12 @@
 {
   "name": "Batidor De Mano 5 En 1 Sokany",
   "price": 78000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Sokany",
   "description": "Batidor eléctrico de mano 5 en 1, de 800w, fácil de limpiar, 5 diferentes batidores",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Batidor De Mano 5 En 1 Sokany",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19977c3942c-variedadestvcali-pw07b0qg8bm-lhicndy6irn.png",

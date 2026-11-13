@@ -1,9 +1,12 @@
 {
   "name": "Depiladora Recargable 4 En 1 Gm7003",
   "price": 90000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Belleza",
   "description": "Depiladora Recargable 4 En 1 Gm7003",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Depiladora Recargable 4 En 1 Gm7003",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19b4c76d408-variedadestvcali-doih661jmz-xl7a2lcl0dp.png",

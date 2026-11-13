@@ -1,9 +1,12 @@
 {
   "name": "Extractor De Jugo Sokany",
   "price": 150000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Sokany",
   "description": "Extractor de jugo, poder de 800w, con 2 velocidades",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Extractor De Jugo Sokany",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/193224b2b4f-variedadestvcali-5ikbqplleck-qsiobvtrfn.png",

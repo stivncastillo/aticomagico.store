@@ -1,9 +1,12 @@
 {
   "name": "Pista Dinosaurio 217 Pcs",
   "price": 122000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Juguetería / Niños",
   "description": "Pista de dinosaurio, de 217 piezas, incluye carritos y figuras de dinosaurios, pista flexible",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Pista Dinosaurio 217 Pcs",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1a10f43230c-variedadestvcali-ugd2tkfleco-0kgkqtaojsa.png",

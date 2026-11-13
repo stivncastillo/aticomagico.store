@@ -1,9 +1,12 @@
 {
   "name": "Escurridor De Loza Doble 65cm",
   "price": 140000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Cocina",
   "description": "Escurridor de loza doble tapa de 65cm medida de: 65x97x29cm",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Escurridor De Loza Doble 65cm",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19c2dfd8331-variedadestvcali-a2aordsica-kdk0gzbylxl.png",

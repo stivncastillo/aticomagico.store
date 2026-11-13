@@ -1,9 +1,12 @@
 {
   "name": "Colchon Inflable H9040",
   "price": 240000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Hogar",
   "description": "Colchón inflable dúo con bomba integrada\nMedidas: 198x150x40cm",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Colchon Inflable H9040",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1995a06d3d7-variedadestvcali-6fym2m4ol5j-y5n3uhst7v.png",

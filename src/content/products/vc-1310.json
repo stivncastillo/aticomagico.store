@@ -1,9 +1,12 @@
 {
   "name": "Organizador De Joyas",
   "price": 65000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Belleza",
   "description": "Organizador de joyas con almacenamiento multirejilla de tres capas, doble cajón, medida de 20x10cm",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Organizador De Joyas",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/194d6e4e806-variedadestvcali-my3fe7v0rv-k70l2zziszr.png",

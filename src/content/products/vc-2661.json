@@ -1,9 +1,12 @@
 {
   "name": "Set Belleza 43pcs (b510) Maquillaje",
   "price": 55000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Juguetería / Niños",
   "description": "Set de belleza de maquillaje para niñas, incluye: sombras, esmaltes, labiales, uñas postizas, stickers y brochas",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Set Belleza 43pcs (b510) Maquillaje",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1a13cb380ea-variedadestvcali-fo0gv4pwj3c-ecm0ama9epn.png",

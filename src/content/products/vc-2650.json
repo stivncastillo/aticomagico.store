@@ -1,9 +1,12 @@
 {
   "name": "Gorro Para Aliviar La Migraña",
   "price": 22000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Belleza",
   "description": "Gorro Para Aliviar La Migraña",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Gorro Para Aliviar La Migraña",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19f99b28fae-variedadestvcali-l9cezfvgx9j-bxs6pt0fg9l.png",

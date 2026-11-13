@@ -1,9 +1,12 @@
 {
   "name": "Portacomidas De Plastico 6214",
   "price": 28000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Hogar",
   "description": "Portacomidas de plástico dos niveles con compartimientos, incluye cuchara tenedor\nMedidas: 16cm x 9cm\nColores: rosado y verde menta",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Portacomidas De Plastico 6214",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19b609c1976-variedadestvcali-akmnv3qtska-0wuhiyornj8q.png",

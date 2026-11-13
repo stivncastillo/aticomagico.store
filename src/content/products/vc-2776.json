@@ -1,9 +1,12 @@
 {
   "name": "Lampara Balon Dy–147",
   "price": 50000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Hogar",
   "description": "Lampara en forma de balón recargable con encendido táctil, tres niveles de luz (cálida y fría) 20W",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Lampara Balon Dy–147",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19f8c507823-variedadestvcali-xuagiifkat-u315pzebq3m.png"

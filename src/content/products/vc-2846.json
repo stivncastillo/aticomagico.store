@@ -1,9 +1,12 @@
 {
   "name": "Parrilla Electrica Sokany 3574",
   "price": 100000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Sokany",
   "description": "Disfruta el auténtico sabor de las parrilladas en casa! 🍖 Ideal para preparar carnes, chorizos, hamburguesas, vegetales y mucho más.\n\n⚡ Potencia: 2200 W\n🌡️ Temperatura regulable mediante perilla de control.\n🍢 Rejilla metálica para asar diferentes alimentos.\n🧼 Diseño práctico que facilita la limpieza.",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Parrilla Electrica Sokany 3574",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1a179a3ff91-variedadestvcali-5fu712zktph-am8jx19ahvf.png",

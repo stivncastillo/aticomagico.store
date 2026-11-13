@@ -1,9 +1,12 @@
 {
   "name": "Joyero Viajero",
   "price": 20000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Belleza",
   "description": "Joyero Viajero",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Joyero Viajero",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19f6617a4b1-variedadestvcali-vu2i10z1i4m-hyz31obe25.png",

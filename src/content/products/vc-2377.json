@@ -1,9 +1,12 @@
 {
   "name": "Set De Recipientes X4",
   "price": 48000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Cocina",
   "description": "Set de recipientes plegables para lonchera x4, material: silicona y plástico, colores: azul y gris Incluye: 1 recipiente de 1,200ml, 1 recipiente de 800ml, 1 recipiente de 500ml, 1 recipiente de 350ml,",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Set De Recipientes X4",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19b4859af45-variedadestvcali-bfozmzw2o4b-cryn9r3kr3i.png",

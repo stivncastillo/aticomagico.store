@@ -1,9 +1,12 @@
 {
   "name": "Mesa Auxiliar Redonda Pequeña",
   "price": 79000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Mesas",
   "description": "Mesa auxiliar pequeña, redonda, medida de: 49x44cm , color blanco, gris y negro",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Mesa Auxiliar Redonda Pequeña",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/198a9aecda2-variedadestvcali-pr92c49cb9h-iogst7s4rh7.png",

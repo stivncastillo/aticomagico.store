@@ -1,9 +1,12 @@
 {
   "name": "Patillera Digital T9",
   "price": 28000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Belleza",
   "description": "Patillera con tablero digital, recargable",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Patillera Digital T9",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/192e8458092-variedadestvcali-2xay8e5zbvg-4hhuwnfuqn2.png",

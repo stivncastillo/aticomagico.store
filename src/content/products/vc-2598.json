@@ -1,9 +1,12 @@
 {
   "name": "Destapador De Botellas Kh1",
   "price": 12000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Cocina",
   "description": "Destapador de botellas automático gris, ideal para personalizar",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Destapador De Botellas Kh1",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1958724491d-variedadestvcali-zpsq6ek5w2d-rzp6uer4zu.png",

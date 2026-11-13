@@ -1,9 +1,12 @@
 {
   "name": "Masajeador Ventosa Recargable",
   "price": 42000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Deporte",
   "description": "Masajeador ventosa, 12 niveles de temperatura, recargable, pantalla led",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Masajeador Ventosa Recargable",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/197d08fd49f-variedadestvcali-9i85aypq5dj-nvqydz3mc3e.png",

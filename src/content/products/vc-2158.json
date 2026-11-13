@@ -1,9 +1,12 @@
 {
   "name": "Maquina Para Crepes Sokany 5208",
   "price": 67000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Sokany",
   "description": "Sartén para crepes de desayuno, placa de inmersión antiadherente, mango largo de mano",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Maquina Para Crepes Sokany 5208",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19977c9656f-variedadestvcali-mquxy2hl7mj-cn1klo6v33m.png",

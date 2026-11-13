@@ -1,9 +1,12 @@
 {
   "name": "Colchon Inflable H9021",
   "price": 198000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Hogar",
   "description": "Colchon Inflable H9021",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Colchon Inflable H9021",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19d0d3d2f7e-variedadestvcali-5557sqe12ef-xgfqeg7kcrg.png",

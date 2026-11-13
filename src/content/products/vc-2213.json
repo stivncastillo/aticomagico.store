@@ -1,9 +1,12 @@
 {
   "name": "Maquina Para Snacks Sokany 08006",
   "price": 140000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Sokany",
   "description": "Maquina para snacks, molde para pancake, mini donas, y figuras, potencia de 600w, fácil de limpiar, doble cara de calentamiento, recubrimiento antiadherente",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Maquina Para Snacks Sokany 08006",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19a3c4bb608-variedadestvcali-w5zw7gespln-beyzlnfhedn.png",

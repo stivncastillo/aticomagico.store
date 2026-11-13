@@ -1,9 +1,12 @@
 {
   "name": "Lampara Led Para Uñas",
   "price": 129000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Belleza",
   "description": "Lampara Led Para Uñas",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Lampara Led Para Uñas",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19cbf11ba6a-variedadestvcali-yf4c14c7dda-shlnjrdq4is.png",

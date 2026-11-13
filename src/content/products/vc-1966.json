@@ -1,9 +1,12 @@
 {
   "name": "Maleta Antirrobo 8894",
   "price": 38000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Hogar",
   "description": "Bolso antirrobo perchero para terciar, USB, con candado de codigo, medida 32x20cm",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Maleta Antirrobo 8894",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19810bdf5e4-variedadestvcali-g07tzolbq6t-941twm2fuw.png",

@@ -1,9 +1,12 @@
 {
   "name": "Set Maquillaje 50pcs (ig3213)",
   "price": 75000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Juguetería / Niños",
   "description": "Set de maquillaje para niñas, amplias paleta de sombras, tonos de rubor e iluminadores, labiales, aplicadores y brochas",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Set Maquillaje 50pcs (ig3213)",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1a13cb03b7c-variedadestvcali-lh7w72xh9b-yhoucdiwy2.png",

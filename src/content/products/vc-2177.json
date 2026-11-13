@@ -1,9 +1,12 @@
 {
   "name": "Quita Mota Hb-522",
   "price": 24000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Hogar",
   "description": "Quita motas para ropa recargable portátil",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Quita Mota Hb-522",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/199afa03076-variedadestvcali-ld7uo6qqkak-3d46eit62qi.png",

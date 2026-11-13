@@ -1,9 +1,12 @@
 {
   "name": "Iniciador De Bateria",
   "price": 250000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Herramienta",
   "description": "Iniciador De Bateria",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Iniciador De Bateria",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedades_tv_cali/19007fdd17e-variedades_tv_cali-c3bbzqpuyoq-41z7rcyrgvr.png"

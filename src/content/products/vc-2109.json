@@ -1,9 +1,12 @@
 {
   "name": "Funda De Sofá 3 Puestos",
   "price": 68000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Hogar",
   "description": "Funda de sofá elástica 3 puestos, medidas: 180x230cm\nMaterial: 95% poliéster, 5% Spandex\nColores: gris y negro",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Funda De Sofá 3 Puestos",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/198d85c28d6-variedadestvcali-bfzjwapxkp7-r940z7rng9.png",

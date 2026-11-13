@@ -1,9 +1,12 @@
 {
   "name": "Termo Bebidas Digital",
   "price": 28000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Hogar",
   "description": "Termo para bebidas caliente y frías, con control de temperatura, capacidad de 500ml",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Termo Bebidas Digital",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1a0b12837ae-variedadestvcali-ev6ka89ve14-robeh28cukg.png",

@@ -1,9 +1,12 @@
 {
   "name": "Proyector Astronauta 119",
   "price": 58000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Hogar",
   "description": "Proyector astronauta de atmósfera estrellada aurora, con parlante y música relajante",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Proyector Astronauta 119",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19a2768122d-variedadestvcali-s93fo5seric-f7s7x1m35xo.png",

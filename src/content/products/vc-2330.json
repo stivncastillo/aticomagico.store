@@ -1,9 +1,12 @@
 {
   "name": "Mesa De Futbolin 1101",
   "price": 68000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Juguetería / Niños",
   "description": "Juego de mesa futbolín adecuado para dos personas, contiene: 1 campo de futbol, 2 pelotas, 4 asas de control, 2 redes de porteria. Medida de: 20.8x55x26cm\nNO TIENE GARANTIA",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Mesa De Futbolin 1101",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19ae4e14318-variedadestvcali-gjg19ujpqe5-1nefsp545d2.png",

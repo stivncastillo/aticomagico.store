@@ -1,9 +1,12 @@
 {
   "name": "Luz Led Neon Ritmica 10mt",
   "price": 82000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Hogar",
   "description": "Tira Luz Led Neon Manguera 10 Metros Rítmica , con conexión bluetooth",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Luz Led Neon Ritmica 10mt",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19e9df98c68-variedadestvcali-ewph2ldx9cc-ir9vnsu8fkm.png",

@@ -1,9 +1,12 @@
 {
   "name": "Pistola De Burbujas",
   "price": 75000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Juguetería / Niños",
   "description": "Diseño de 92 hoyos, incluye: 2 tarros burbujeros y 4 bolsas. Bateria recargable",
   "featured": true,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Pistola De Burbujas",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19ac75ff208-variedadestvcali-4owajxsojp5-7yeishvzp0f.png",

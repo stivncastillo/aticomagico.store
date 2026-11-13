@@ -1,9 +1,12 @@
 {
   "name": "Audifono Intercomunicador 2x",
   "price": 68000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Herramienta",
   "description": "Intercomunicador para Casco Manos Libres Bluetooth Waterproof,resistente al agua IPX6, recargable\nConexión para sincronizar 2 cascos a la vez",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Audifono Intercomunicador 2x",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1a015cea161-variedadestvcali-tyx86yzpz9l-av0wl3t9ce.png",

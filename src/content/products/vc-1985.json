@@ -1,9 +1,12 @@
 {
   "name": "Set Jarra Y Tazas",
   "price": 79000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Cocina",
   "description": "Set de jarra y tazas x4 en vidrio Medidas: Jarra 1.8L, tazas 320ML",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Set Jarra Y Tazas",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19cafbfbb65-variedadestvcali-naym4ctz3ra-a3b9jgdgwap.png",

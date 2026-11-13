@@ -1,9 +1,12 @@
 {
   "name": "Pulidora Portatil",
   "price": 220000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Herramienta",
   "description": "Pulidora inalámbrica, incluye cargador, llave para apretar el disco y protector de disco, con 2 baterías 68V, y mango de agarre, velocidad de 1000r/min",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Pulidora Portatil",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1a02b45da9e-variedadestvcali-2q0fkugsl7v-h9a1m1b9kf.png",

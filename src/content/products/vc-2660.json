@@ -1,9 +1,12 @@
 {
   "name": "Set Belleza (b500) Maquillaje",
   "price": 59000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Juguetería / Niños",
   "description": "Set de belleza de maquillaje para niñas, incluye: sombras, esmaltes, labiales, uñas postizas, stickers y brochas",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Set Belleza (b500) Maquillaje",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1a13cb25cfb-variedadestvcali-ejsktkijk3h-m7fvwv8dhn.png",

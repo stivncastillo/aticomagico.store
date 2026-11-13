@@ -1,9 +1,12 @@
 {
   "name": "Set Afeitador Depilador 3 En 1",
   "price": 68000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Belleza",
   "description": "Set depilador, afeitadora y shaver recargable 3 en 1 300mAh, 6500 RPM",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Set Afeitador Depilador 3 En 1",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/199aac24fd3-variedadestvcali-uuubqnds9x-6owvkkaffqw.png",

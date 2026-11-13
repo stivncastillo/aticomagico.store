@@ -1,9 +1,12 @@
 {
   "name": "Termo Freesip 1000ml",
   "price": 45000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Hogar",
   "description": "Termo metálico con filtro, capacidad de 1000ml, control de temperatura fría y caliente por horas\nCaja surtida:\n- Verde aguamarina\n- Rosado\n- Azul rey\n- Negro\n- Rojo\n- Verde menta",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Termo Freesip 1000ml",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19f4e628e12-variedadestvcali-1f9es0m6pqo-e8jrh8r69pv.png",

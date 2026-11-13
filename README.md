@@ -155,7 +155,7 @@ Esto:
    | `destacado`                | **vos**                | `TRUE`/`FALSE` — si aparece en la seccion de destacados |
    | `disponible`                | **vos**                | `TRUE`/`FALSE` — si esta en stock |
    | `publicar`                   | **vos**                | `TRUE`/`FALSE` — si `FALSE`, el producto se borra de la tienda al importar |
-   | `en_catalogo_proveedor`       | el scraper             | `TRUE` si el proveedor lo sigue teniendo, `FALSE` si desaparecio de su catalogo (no se borra solo — es un aviso para que decidas) |
+   | `en_proveedor`       | el scraper             | `TRUE` si el proveedor lo sigue teniendo, `FALSE` si desaparecio de su catalogo (no se borra solo — es un aviso para que decidas) |
 
    Correr `npm run scrape` de nuevo **nunca te pisa** `categoria`,
    `precio_venta`, `descripcion`, `destacado`, `disponible` ni `publicar` si

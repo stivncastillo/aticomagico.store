@@ -1,9 +1,12 @@
 {
   "name": "Set Loza Para Bebes Silicona",
   "price": 32000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Juguetería / Niños",
   "description": "Set de loza para bebés en silicona antideslizante, 6 PCS",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Set Loza Para Bebes Silicona",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19d44bb6c03-variedadestvcali-ayefj6x3if5-2bmwxrydswp.png",

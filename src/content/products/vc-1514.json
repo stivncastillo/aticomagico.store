@@ -1,9 +1,12 @@
 {
   "name": "Máquina Para Pizza",
   "price": 98000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Cocina",
   "description": "Máquina multifuncional para pizza, sandwich o waffles. 1000W",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Máquina Para Pizza",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1982f5ec451-variedadestvcali-dprqfakv59u-new5dx2tnve.png",

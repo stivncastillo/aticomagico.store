@@ -1,9 +1,12 @@
 {
   "name": "Picador De Verduras Electrico",
   "price": 87000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Cocina",
   "description": "Picador y cortador de verduras eléctrico, 3 diferentes talladores",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Picador De Verduras Electrico",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19cbef1aa8f-variedadestvcali-tmpik1izt3s-rfxl5j1shdi.png",

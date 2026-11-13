@@ -1,9 +1,12 @@
 {
   "name": "Hidrolavadora 6 Chorros",
   "price": 69000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Herramienta",
   "description": "Hidrolavadora nuevo modelo, boquilla 6 en 1, incluye 2 baterías de 48v",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Hidrolavadora 6 Chorros",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19b5af0d766-variedadestvcali-xywvgxjmmei-91saj6artco.png",

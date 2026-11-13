@@ -1,9 +1,12 @@
 {
   "name": "Bolsa Termica Para Colicos Pequeña",
   "price": 19000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Belleza",
   "description": "Bolsa Termica Para Colicos Pequeña",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Bolsa Termica Para Colicos Pequeña",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19bf06b8308-variedadestvcali-pe72yzouwkg-j5dipwn606l.png",

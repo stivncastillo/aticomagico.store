@@ -1,9 +1,12 @@
 {
   "name": "Termo Termico Deportivo 800ml",
   "price": 36000,
+  "salePrice": null,
+  "discountPercentage": null,
   "category": "Hogar",
   "description": "Termo metálico con filtro, capacidad de 800ml, control de temperatura fría hasta 12 horas y caliente hasta 8 horas\nCaja surtida:\n- Azul oscuro\n- Rojo\n- Rosado\n- Morado\n- Gris",
   "featured": false,
+  "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Termo Termico Deportivo 800ml",
   "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/19f4e5e8b85-variedadestvcali-nrnkndge7ac-2qz7r9743t2.png",
