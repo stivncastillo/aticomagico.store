@@ -1,0 +1,14 @@
+{
+  "name": "Almohada Ortopedica",
+  "price": 50000,
+  "category": "Hogar",
+  "description": "Almohada Ortopedica",
+  "featured": false,
+  "inStock": true,
+  "imageAlt": "Almohada Ortopedica",
+  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/192c9fc818c-variedadestvcali-5o1z2u4jn6e-k80zy6qw3k.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/192c9fc818c-variedadestvcali-5o1z2u4jn6e-k80zy6qw3k.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/192c9fc86a7-variedadestvcali-5o1z2u4jn6e-zdpi0jlte5j.png"
+  ]
+}
