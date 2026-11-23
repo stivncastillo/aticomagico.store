@@ -6,6 +6,7 @@ import ProductCard from "@/components/ProductCard.astro";
 import { siteConfig } from "@/lib/config";
 import AddToCartButton from "@/components/cart/AddToCartButton";
 import ProductGallery from "@/components/ProductGallery";
+import { getDiscountPercent } from "@/lib/product";
 
 export async function getStaticPaths() {
   const products = await getCollection("products");
@@ -28,6 +29,8 @@ const formatter = new Intl.NumberFormat(siteConfig.locale, {
   currency: siteConfig.currency,
   maximumFractionDigits: 0,
 });
+
+const discount = getDiscountPercent(data.price, data.salePrice ?? null);
 ---
 
 <Layout title={data.name} description={data.description} image={data.image}>
@@ -48,11 +51,20 @@ const formatter = new Intl.NumberFormat(siteConfig.locale, {
         <p class="text-xs font-medium uppercase tracking-wide text-brand-600">{data.category}</p>
         <h1 class="mt-2 text-3xl font-extrabold text-ink-900 sm:text-4xl">{data.name}</h1>
 
-        <div class="mt-4 flex items-baseline gap-3">
+        <div class="mt-4 flex flex-wrap gap-3 items-center">
           <span class="text-2xl font-bold text-ink-900">{formatter.format(data.salePrice ?? data.price)}</span>
           {
             data.salePrice && (
-              <span class="text-lg text-ink-700 line-through">{formatter.format(data.price)}</span>
+              <>
+                <span class="text-lg text-ink-700 line-through">{formatter.format(data.price)}</span>
+                {/* Misma etiqueta roja que en las fichas del catalogo (ver
+                    ProductCard.astro), pegada al precio: es donde mas se
+                    nota, segun la guia de Nielsen Norman sobre como
+                    comunicar descuentos. */}
+                <span class="rounded-full bg-red-600 px-2.5 py-1 text-sm font-bold text-white">
+                  -{discount}%
+                </span>
+              </>
             )
           }
         </div>

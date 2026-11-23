@@ -130,8 +130,13 @@ export default function ProductFilter({ products, locale, currency }: Props) {
                   key={product.slug}
                   className="relative flex flex-col overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm transition hover:shadow-md"
                 >
+                  {/* Misma etiqueta roja que ProductCard.astro (ver ese
+                      archivo para la justificacion del color/forma) -
+                      aqui duplicada porque el catalogo renderiza sus
+                      fichas con su propia tarjeta en React, no con
+                      ProductCard.astro. */}
                   {hasDiscount && (
-                    <span className="absolute right-3 top-3 rounded-full bg-indigo-500 h-12 w-12 text-center flex items-center justify-center text-sm font-bold text-white shadow-sm z-50">
+                    <span className="absolute left-3 top-3 z-10 rounded-full bg-red-600 px-2.5 py-1 text-xs font-bold text-white shadow-sm">
                       -{discount}%
                     </span>
                   )}
@@ -146,7 +151,7 @@ export default function ProductFilter({ products, locale, currency }: Props) {
                       className="h-full w-full object-cover"
                     />
                     {!product.inStock && (
-                      <span className="absolute left-3 top-3 rounded-full bg-ink-900/90 px-3 py-1 text-xs font-semibold text-white">
+                      <span className="absolute right-3 top-3 rounded-full bg-ink-900/90 px-3 py-1 text-xs font-semibold text-white">
                         Agotado
                       </span>
                     )}

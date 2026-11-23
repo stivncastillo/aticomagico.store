@@ -9,12 +9,13 @@ const MAX_OFERTAS = 16;
 
 const allProducts = await getCollection("products");
 
-// Ofertas de la semana: productos marcados weeklyDeal=true en el Excel que
-// ademas tienen un descuento real (salePrice < price), ordenados de mayor a
-// menor porcentaje de descuento. No se rellena con productos sin descuento
-// si hay menos de 16 - se muestran los que haya.
+// Ofertas de la semana: TODOS los productos marcados weeklyDeal=true en el
+// Excel (tengan o no un descuento real), ordenados de mayor a menor
+// porcentaje de descuento - los que no tienen descuento quedan al final,
+// ordenados entre si por nombre para que no salten de posicion en cada build.
 const ofertas = allProducts
-  .filter((p) => p.data.weeklyDeal && getDiscountPercent(p.data.price, p.data.salePrice ?? null) > 0)
+  .filter((p) => p.data.weeklyDeal)
+  .sort((a, b) => a.data.name.localeCompare(b.data.name))
   .sort(
     (a, b) =>
       getDiscountPercent(b.data.price, b.data.salePrice ?? null) -
