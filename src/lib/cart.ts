@@ -1,5 +1,5 @@
-import { PUBLIC_WHATSAPP_NUMBER } from "astro:env/client";
 import { siteConfig } from "./config";
+import { getActiveSellerWhatsApp } from "./sellers";
 
 export interface CartItem {
   slug: string;
@@ -139,8 +139,16 @@ export function formatPrice(value: number) {
  * Si se pasan los datos del cliente (nombre, correo, direccion, ciudad -
  * pedidos en el formulario de checkout del carrito), se agregan al final
  * del mensaje para que el envio se pueda coordinar sin ida y vuelta.
+ *
+ * El numero, si no se pasa explicito, se resuelve dinamicamente segun el
+ * vendedor activo del visitante (ver sellers.ts) - asi que si este pedido
+ * viene del link de un amigo, le llega a el y no al numero oficial.
  */
-export function buildCartWhatsAppLink(items: CartItem[], customer?: CustomerInfo) {
+export function buildCartWhatsAppLink(
+  items: CartItem[],
+  customer?: CustomerInfo,
+  phone: string = getActiveSellerWhatsApp()
+) {
   const lines = items.map(
     (item, i) => `${i + 1}. ${item.name} x${item.qty} - ${formatPrice(item.price * item.qty)}`
   );
@@ -165,5 +173,5 @@ export function buildCartWhatsAppLink(items: CartItem[], customer?: CustomerInfo
   }
 
   const message = messageParts.join("\n");
-  return `https://wa.me/${PUBLIC_WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 }

@@ -1,12 +1,14 @@
-import { PUBLIC_WHATSAPP_NUMBER } from "astro:env/client";
+import { getActiveSellerWhatsApp } from "./sellers";
 import { siteConfig } from "./config";
 
 /**
  * Construye un link de WhatsApp (wa.me) con un mensaje pre-armado.
- * El numero se toma de la variable de entorno PUBLIC_WHATSAPP_NUMBER
- * (ver .env / .env.example) y debe ir sin "+" ni espacios, ej: 573001234567
+ * El numero, si no se pasa explicito, se resuelve dinamicamente segun el
+ * vendedor activo del visitante (ver sellers.ts) - o el numero oficial
+ * (PUBLIC_WHATSAPP_NUMBER) si no hay ninguno. El numero va sin "+" ni
+ * espacios, ej: 573001234567
  */
-export function buildWhatsAppLink(message: string, phone: string = PUBLIC_WHATSAPP_NUMBER) {
+export function buildWhatsAppLink(message: string, phone: string = getActiveSellerWhatsApp()) {
   const encoded = encodeURIComponent(message);
   return `https://wa.me/${phone}?text=${encoded}`;
 }

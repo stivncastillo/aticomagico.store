@@ -58,5 +58,14 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     </main>
     <Footer />
     <FloatingWhatsApp />
+
+    <script>
+      // WhatsApp dinamico por vendedor: si el visitante llego con
+      // ?vendedor=<id> (o ya lo tenia guardado de una visita anterior),
+      // todos los botones de WhatsApp del sitio apuntan a su numero en vez
+      // del oficial. Ver src/lib/sellers.ts.
+      import { initSellerRouting } from "@/lib/sellers";
+      initSellerRouting();
+    </script>
   </body>
 </html>
