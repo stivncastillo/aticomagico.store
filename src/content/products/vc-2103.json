@@ -1,8 +1,8 @@
 {
   "name": "Afeitadora 3 En 1 595",
   "price": 48000,
-  "salePrice": null,
-  "discountPercentage": null,
+  "salePrice": 40000,
+  "discountPercentage": 17,
   "category": "Belleza",
   "description": "Afeitadora, patillera y nariz, recargable",
   "featured": false,

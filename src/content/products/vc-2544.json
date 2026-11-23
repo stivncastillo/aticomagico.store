@@ -1,0 +1,17 @@
+{
+  "name": "Multitoma Para Carro",
+  "price": 82000,
+  "salePrice": null,
+  "discountPercentage": null,
+  "category": "Herramienta",
+  "description": "Multitoma para carro, 3 de corriente, 4 usb",
+  "featured": false,
+  "weeklyDeal": false,
+  "inStock": true,
+  "imageAlt": "Multitoma Para Carro",
+  "image": "https://firebasestorage.googleapis.com/v0/b/mi-catalogo-1f031.appspot.com/o/variedades_tv_cali-gvc9rbh3ihk-ns83e5bn2q.png?alt=media&token=1be857c6-0d81-4189-ba80-483e34d8b955",
+  "images": [
+    "https://firebasestorage.googleapis.com/v0/b/mi-catalogo-1f031.appspot.com/o/variedades_tv_cali-gvc9rbh3ihk-ns83e5bn2q.png?alt=media&token=1be857c6-0d81-4189-ba80-483e34d8b955",
+    "https://firebasestorage.googleapis.com/v0/b/mi-catalogo-1f031.appspot.com/o/variedades_tv_cali-gvc9rbh3ihk-i9naegqodws.png?alt=media&token=e8b57efc-8236-4c3d-adc2-046bdf8c9d37"
+  ]
+}

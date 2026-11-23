@@ -1,15 +1,15 @@
 {
   "name": "Organizador De Baño Esquinero",
   "price": 39000,
-  "salePrice": null,
-  "discountPercentage": null,
+  "salePrice": 32000,
+  "discountPercentage": 18,
   "category": "Hogar",
   "description": "Organizador de baño esquinero, con 4 niveles y media ajustable, maximo de alto 2.60cm, ancho de 43 cm",
   "featured": false,
   "weeklyDeal": false,
   "inStock": true,
   "imageAlt": "Organizador De Baño Esquinero",
-  "image": "https://vercatalogo101.nyc3.cdn.digitaloceanspaces.com/images/variedadestvcali/1a01b724329-variedadestvcali-7elpve390y5-tbdi0ey38jr.png",
+  "image": "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1a01b724329-variedadestvcali-7elpve390y5-tbdi0ey38jr.png",
   "images": [
     "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1a01b724329-variedadestvcali-7elpve390y5-tbdi0ey38jr.png",
     "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1a01b724605-variedadestvcali-7elpve390y5-si52b7u7fu.png",

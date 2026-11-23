@@ -1,0 +1,19 @@
+{
+  "name": "Organizador Viajero",
+  "price": 30000,
+  "salePrice": null,
+  "discountPercentage": null,
+  "category": "Hogar",
+  "description": "Organizador viajero impermeable para cosmeticos\nColores: azul y rosado",
+  "featured": false,
+  "weeklyDeal": false,
+  "inStock": true,
+  "imageAlt": "Organizador Viajero",
+  "image": "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1989f5d7e8a-variedadestvcali-qxhktprwhek-8dnjmacmbn6.png",
+  "images": [
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1989f5d7e8a-variedadestvcali-qxhktprwhek-8dnjmacmbn6.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1989f5d8827-variedadestvcali-qxhktprwhek-eqbbl99ip8.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1989f5d84d8-variedadestvcali-qxhktprwhek-vwzitfdduq.png",
+    "https://vercatalogo101.nyc3.digitaloceanspaces.com/images/variedadestvcali/1989f5d7fb4-variedadestvcali-qxhktprwhek-5wte21xz95o.png"
+  ]
+}

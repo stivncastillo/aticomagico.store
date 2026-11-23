@@ -22,6 +22,4 @@ npm-debug.log*
 !.vscode/extensions.json
 .idea/
 
-scripts/scrape-vercatalogo.mjs
-scripts/import-excel.mjs
 data/productos-proveedor.xlsx

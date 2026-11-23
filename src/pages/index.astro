@@ -5,17 +5,46 @@ import Hero from "@/components/Hero.astro";
 import HowToBuy from "@/components/HowToBuy.astro";
 import ProductCard from "@/components/ProductCard.astro";
 import { siteConfig } from "@/lib/config";
+import { pickRandom } from "@/lib/product";
 
 const allProducts = await getCollection("products");
-const featured = allProducts.filter((p) => p.data.featured).slice(0, 8);
+// Mostramos 4 al azar entre TODOS los marcados destacado=TRUE en el Excel
+// (Stiven suele dejar mas de 4 marcados a proposito) - se reeligen en cada
+// build, ver pickRandom() en src/lib/product.ts.
+const featured = pickRandom(allProducts.filter((p) => p.data.featured), 4);
+const weeklyProducts = allProducts.filter((p) => p.data.weeklyDeal).slice(0, 8);
 ---
 
 <Layout title={siteConfig.name}>
   <Hero />
 
-  <section class="container-page py-16 sm:py-24">
+  <section class="container-page py-10 sm:py-16">
     <div class="flex items-end justify-between">
-      <h2 class="text-2xl font-bold text-ink-900 sm:text-3xl">Destacados</h2>
+      <h2 class="text-2xl font-bold text-ink-900 sm:text-3xl">Productos de la Semana</h2>
+    </div>
+
+    <div class="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 lg:grid-cols-4">
+      {
+        weeklyProducts.map((product) => (
+          <ProductCard
+            slug={product.id}
+            name={product.data.name}
+            price={product.data.price}
+            salePrice={product.data.salePrice}
+            image={product.data.image}
+            imageAlt={product.data.imageAlt}
+            category={product.data.category}
+            inStock={product.data.inStock}
+            weeklyDeal={product.data.weeklyDeal}
+          />
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="container-page py-10 sm:py-16">
+    <div class="flex items-end justify-between">
+      <h2 class="text-2xl font-bold text-ink-900 sm:text-3xl">Más Vendidos</h2>
       <a href="/catalogo" class="text-sm font-semibold text-brand-600 hover:underline">
         Ver todo →
       </a>
@@ -28,11 +57,12 @@ const featured = allProducts.filter((p) => p.data.featured).slice(0, 8);
             slug={product.id}
             name={product.data.name}
             price={product.data.price}
-            compareAtPrice={product.data.compareAtPrice}
+            salePrice={product.data.salePrice}
             image={product.data.image}
             imageAlt={product.data.imageAlt}
             category={product.data.category}
             inStock={product.data.inStock}
+            weeklyDeal={product.data.weeklyDeal}
           />
         ))
       }

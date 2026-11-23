@@ -117,13 +117,11 @@ antes de que nada se publique en la tienda:
 
 ```bash
 npm install
-npx playwright install chromium
 ```
 
-`npx playwright install chromium` descarga el navegador que usa el script
-para leer la pagina (el catalogo del proveedor carga los productos con
-JavaScript, por eso hace falta un navegador real y no alcanza con pedir el
-HTML). Puede pesar ~150-300MB, es normal que tarde un rato la primera vez.
+No hace falta instalar ningun navegador: el scraper consume directamente
+la API JSON del proveedor (ver mas abajo), no abre la pagina con un
+navegador real.
 
 ### Paso 1: traer los productos del proveedor al Excel
 
@@ -132,14 +130,12 @@ npm run scrape
 ```
 
 Esto:
-1. Abre el catalogo, acepta el aviso de cookies si aparece.
-2. Hace clic en "Ver mas" hasta cargar todo el catalogo.
-3. Lee codigo, nombre, precio de mayorista, categoria e imagen de cada
-   tarjeta. El listado marca los productos que tienen mas de 1 foto — para
-   esos (solo esos), abre el modal del producto y trae la galeria completa.
-   No hace falta `--deep` para esto — ver "Descripciones reales y fotos
-   extra" mas abajo.
-4. Escribe (o actualiza) `data/productos-proveedor.xlsx`, con una fila por
+1. Pide un token de sesion a la API del proveedor (vence a los 15 minutos,
+   se pide uno nuevo solo si hace falta).
+2. Trae TODOS los productos paginando esa misma API — en segundos, no en
+   minutos. Cada producto ya viene con su descripcion real completa y
+   TODAS sus fotos, sin necesitar ningun paso extra.
+3. Escribe (o actualiza) `data/productos-proveedor.xlsx`, con una fila por
    producto y estas columnas:
 
    | Columna                 | Quien la llena       | Que es |
@@ -150,18 +146,21 @@ Esto:
    | `precio_mayorista`        | el scraper             | precio del proveedor, de referencia — **no es el precio de venta** |
    | `precio_venta`            | **vos**                | el precio que se muestra en la tienda. Si lo dejas vacio, usa `precio_mayorista` |
    | `imagen`                  | el scraper             | URL de la foto principal (portada) |
-   | `imagenes`                 | el scraper / vos | fotos extra para el carousel del producto, **separadas por coma `,` o punto y coma `;`** (ej: `url1, url2; url3`). Se llena sola con **cualquier** `npm run scrape` (no hace falta `--deep`) si el producto tiene mas de 1 foto en el proveedor — y se sigue refrescando en cada scrape mientras siga teniendo varias. Podes agregar o editar las URLs a mano igual. Si la dejas vacia, la pagina del producto muestra solo la portada, sin carousel |
+   | `imagenes`                 | el scraper / vos | fotos extra para el carousel del producto, **separadas por coma `,` o punto y coma `;`** (ej: `url1, url2; url3`). Se llena sola con **cualquier** `npm run scrape`, siempre, para todo producto que tenga mas de 1 foto en el proveedor — y se sigue refrescando en cada scrape mientras siga teniendo varias. Podes agregar o editar las URLs a mano igual. Si la dejas vacia, la pagina del producto muestra solo la portada, sin carousel |
    | `descripcion`              | **vos** (o el scraper, solo si esta vacia)          | igual que `precio_venta`: si le escribis algo, queda protegida para siempre — ni `scrape` ni `scrape:deep` te la pisan. Si la dejas vacia, `scrape:deep` la llena con la descripcion real del proveedor (y si sigue vacia, al importar se usa el `nombre` como descripcion) |
    | `destacado`                | **vos**                | `TRUE`/`FALSE` — si aparece en la seccion de destacados |
    | `disponible`                | **vos**                | `TRUE`/`FALSE` — si esta en stock |
    | `publicar`                   | **vos**                | `TRUE`/`FALSE` — si `FALSE`, el producto se borra de la tienda al importar |
    | `en_proveedor`       | el scraper             | `TRUE` si el proveedor lo sigue teniendo, `FALSE` si desaparecio de su catalogo (no se borra solo — es un aviso para que decidas) |
+   | `precio_oferta`           | **vos**                | precio de oferta/descuento (opcional). Si le pones un valor menor a `precio_venta`, el producto muestra el precio tachado y el badge de descuento en la tienda |
+   | `promo_semanal`           | **vos**                | `TRUE`/`FALSE` — si aparece en la seccion "Productos de la Semana" del home |
 
    Correr `npm run scrape` de nuevo **nunca te pisa** `categoria`,
-   `precio_venta`, `descripcion`, `destacado`, `disponible` ni `publicar` si
-   ya les habias puesto algo — solo actualiza lo que viene del proveedor
-   (nombre, precio de mayorista, imagen, y `imagenes` si tiene varias fotos)
-   y agrega productos nuevos.
+   `precio_venta`, `precio_oferta`, `descripcion`, `destacado`, `disponible`,
+   `publicar` ni `promo_semanal` si ya les habias puesto algo — solo
+   actualiza lo que viene del proveedor (nombre, precio de mayorista, imagen,
+   y `imagenes`/`descripcion` si todavia estaban vacias) y agrega productos
+   nuevos.
 5. Al final imprime un resumen: cuantos productos son nuevos, cuantos se
    actualizaron, y cuantos ya no estan en el catalogo del proveedor.
 
@@ -193,34 +192,21 @@ para ver los productos actualizados.
 
 ### Fotos extra / carousel y descripciones reales
 
-**Fotos extra**: no hace falta nada especial. Cualquier `npm run scrape`
-normal ya abre el detalle de los productos que el proveedor marca con mas
-de 1 foto (y solo esos, el resto del catalogo se lee rapido, como siempre)
-y llena la columna `imagenes` sola. Esta columna se sigue refrescando en
-cada scrape mientras el producto siga teniendo varias fotos — si le editas
-las URLs a mano y el producto sigue con varias fotos en el proveedor, un
-scrape posterior te la vuelve a pisar (a diferencia de `descripcion` y
-`precio_venta`, que si quedan protegidas).
+No hace falta nada especial, ni flags, ni correr nada aparte. La API del
+proveedor trae SIEMPRE, en cualquier `npm run scrape`, la descripcion real
+completa y TODAS las fotos de cada producto (antes esto necesitaba abrir
+el modal de cada producto con Playwright, y `npm run scrape:deep` para la
+descripcion — ya no existe esa distincion).
 
-**Descripcion real**: por defecto el listado no la trae (usa el `nombre`
-como descripcion al importar). Si la queres, corre:
+- **`imagenes`** se sigue refrescando en cada scrape con lo que tenga el
+  proveedor — si le editas las URLs a mano, un scrape posterior te las
+  vuelve a pisar (a diferencia de `descripcion` y `precio_venta`).
+- **`descripcion`** solo se llena sola si la celda todavia esta vacia —
+  en cuanto le escribis algo a mano, queda protegida para siempre, ningun
+  scrape posterior te la pisa.
 
-```bash
-npm run scrape:deep
-```
-
-Esto abre **todos** los productos (no solo los de varias fotos) para leer
-su descripcion real en el catalogo del proveedor, y la guarda en la
-columna `descripcion` — pero **solo si esa columna todavia esta vacia**.
-Funciona igual que `precio_venta`: en cuanto le escribis algo a mano, queda
-protegida para siempre, ningun `scrape` ni `scrape:deep` posterior te la
-va a pisar.
-
-Como `--deep` abre el detalle de todos los productos (no solo los de
-varias fotos), tarda bastante mas que el scrape normal — con cientos de
-productos puede tomar varios minutos. Si ya tenes las descripciones que
-queres (escritas a mano o traidas una vez con `--deep`), no hace falta
-volver a correrlo — el scrape normal ya te mantiene `imagenes` al dia.
+(`npm run scrape:deep` todavia existe por compatibilidad pero ya no hace
+nada distinto a `npm run scrape` — podes usar cualquiera de los dos.)
 
 ### Carousel de fotos en la pagina del producto
 
@@ -231,7 +217,7 @@ dedo en celular. Si solo tiene una foto (o `imagenes` esta vacia), se ve
 como antes: una sola imagen fija, sin controles.
 
 Podes armar la columna `imagenes` de dos formas: dejando que
-`npm run scrape` la traiga sola del proveedor (no hace falta `--deep`), o
+`npm run scrape` la traiga sola del proveedor, o
 escribiendola vos mismo a mano en el Excel — poné las URLs de las fotos separadas por coma
 `,` o punto y coma `;`, por ejemplo:
 
@@ -281,16 +267,15 @@ pasos manuales, a proposito, para que nada se publique sin que lo revises.
 Si prefieres no automatizar nada todavia, tambien esta perfecto correr
 `npm run scrape` a mano cuando quieras.
 
-### Si el proveedor cambia su pagina
+### Si el proveedor cambia su pagina o su API
 
-El scraper lee la pagina por su estructura HTML actual (nombres de clases
-como `.slide-q-card`, `.product-name`, `.view-more-container`, etc. —
-incluida `.multiple-images`, la que marca los productos con varias fotos:
-si el proveedor la cambia, esos productos simplemente quedan con solo la
-portada). Si el proveedor rediseña su sitio, el script puede dejar de
-encontrar los productos o de cargar el catalogo completo — no se rompe el
-resto de la tienda, simplemente no actualiza el Excel. Si eso pasa, avisame
-y lo ajusto.
+El scraper ya no lee el HTML de la pagina (eso dejo de ser necesario, ver
+arriba) — consume directamente la API JSON del proveedor
+(`api-latam.vercatalogo.com`). Si el proveedor cambia esa API (otra forma
+de pedir el token de sesion, otro nombre de campo en la respuesta, etc.),
+el script puede empezar a fallar o a traer datos incompletos — no se rompe
+el resto de la tienda, simplemente no actualiza el Excel. Si eso pasa,
+avisame y lo ajusto.
 
 ## Build / deploy
 

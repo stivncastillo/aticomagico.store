@@ -1,15 +1,17 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import AddToCartButton from "@/components/cart/AddToCartButton";
+import { getDiscountPercent } from "@/lib/product";
 
 export interface ProductItem {
   slug: string;
   name: string;
   price: number;
-  compareAtPrice?: number;
   image: string;
   imageAlt?: string;
   category: string;
   inStock: boolean;
+  salePrice?: number | null;
+  weeklyDeal: boolean;
 }
 
 interface Props {
@@ -36,15 +38,19 @@ export default function ProductFilter({ products, locale, currency }: Props) {
 
   const categories = useMemo(() => {
     const unique = Array.from(new Set(products.map((p) => p.category)));
-    return ["Todos", ...unique];
+    return ["Todos", "Descuentos", ...unique];
   }, [products]);
 
   const filtered = useMemo(() => {
+    const q = query.trim().toLowerCase();
+
     return products.filter((p) => {
-      const matchesCategory = category === "Todos" || p.category === category;
-      const matchesQuery = p.name
-        .toLowerCase()
-        .includes(query.trim().toLowerCase());
+      const matchesCategory =
+        category === "Todos" ||
+        (category === "Descuentos" ? p.salePrice : p.category === category);
+
+      const matchesQuery = p.name.toLowerCase().includes(q);
+
       return matchesCategory && matchesQuery;
     });
   }, [products, query, category]);
@@ -112,59 +118,82 @@ export default function ProductFilter({ products, locale, currency }: Props) {
           </p>
 
           <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 lg:grid-cols-4">
-            {paginated.map((product) => (
-              <article
-                key={product.slug}
-                className="flex flex-col overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm transition hover:shadow-md"
-              >
-                <a
-                  href={`/producto/${product.slug}`}
-                  className="relative block aspect-square overflow-hidden bg-black/5"
+            {paginated.map((product) => {
+              const hasDiscount = !!product.salePrice;
+              const discount = getDiscountPercent(
+                product.price,
+                product.salePrice ?? null,
+              );
+
+              return (
+                <article
+                  key={product.slug}
+                  className="relative flex flex-col overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm transition hover:shadow-md"
                 >
-                  <img
-                    src={product.image}
-                    alt={product.imageAlt || product.name}
-                    loading="lazy"
-                    className="h-full w-full object-cover"
-                  />
-                  {!product.inStock && (
-                    <span className="absolute left-3 top-3 rounded-full bg-ink-900/90 px-3 py-1 text-xs font-semibold text-white">
-                      Agotado
+                  {hasDiscount && (
+                    <span className="absolute right-3 top-3 rounded-full bg-indigo-500 h-12 w-12 text-center flex items-center justify-center text-sm font-bold text-white shadow-sm z-50">
+                      -{discount}%
                     </span>
                   )}
-                </a>
-                <div className="flex flex-1 flex-col gap-1.5 p-3 sm:p-4 justify-between">
-                  <div>
-                    <p className="text-[11px] font-medium uppercase tracking-wide text-brand-600">
-                      {product.category}
-                    </p>
-                    <a
-                      href={`/producto/${product.slug}`}
-                      className="text-sm font-semibold text-ink-900 hover:text-brand-600 sm:text-base"
-                    >
-                      {product.name}
-                    </a>
-                    <div className="mt-1 flex items-baseline gap-2">
-                      <span className="font-bold text-ink-900">
-                        {formatPrice(product.price, locale, currency)}
+                  <a
+                    href={`/producto/${product.slug}`}
+                    className="relative block aspect-square overflow-hidden bg-black/5"
+                  >
+                    <img
+                      src={product.image}
+                      alt={product.imageAlt || product.name}
+                      loading="lazy"
+                      className="h-full w-full object-cover"
+                    />
+                    {!product.inStock && (
+                      <span className="absolute left-3 top-3 rounded-full bg-ink-900/90 px-3 py-1 text-xs font-semibold text-white">
+                        Agotado
                       </span>
-                      {product.compareAtPrice && (
-                        <span className="text-xs text-ink-700 line-through">
+                    )}
+                  </a>
+                  <div className="flex flex-1 flex-col gap-1.5 p-3 sm:p-4 justify-between">
+                    <div>
+                      <p className="text-[11px] font-medium uppercase tracking-wide text-brand-600">
+                        {product.category}
+                      </p>
+                      <a
+                        href={`/producto/${product.slug}`}
+                        className="text-sm font-semibold text-ink-900 hover:text-brand-600 sm:text-base"
+                      >
+                        {product.name}
+                      </a>
+                      <div className="mt-1 flex items-baseline gap-2">
+                        <span className="font-bold text-ink-900">
                           {formatPrice(
-                            product.compareAtPrice,
+                            product.salePrice ?? product.price,
                             locale,
                             currency,
                           )}
                         </span>
-                      )}
+                        {product.salePrice && (
+                          <span className="text-xs text-ink-700 line-through">
+                            {formatPrice(product.price, locale, currency)}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                    <div className="mt-2 flex items-center gap-2">
+                      <AddToCartButton
+                        product={{
+                          slug: product.slug,
+                          name: product.name,
+                          price: product.price,
+                          image: product.image,
+                          inStock: product.inStock,
+                          salePrice: product.salePrice,
+                        }}
+                        variant="block"
+                      />
                     </div>
                   </div>
-                  <div className="mt-2 flex items-center gap-2">
-                    <AddToCartButton product={product} variant="block" />
-                  </div>
-                </div>
-              </article>
-            ))}
+                </article>
+              );
+            })}
           </div>
 
           {totalPages > 1 && (

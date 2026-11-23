@@ -1,0 +1,13 @@
+{
+  "name": "Molino Picador De Verduras",
+  "price": 40000,
+  "salePrice": null,
+  "discountPercentage": null,
+  "category": "Cocina",
+  "description": "Molino rayador para verduras",
+  "featured": false,
+  "weeklyDeal": false,
+  "inStock": true,
+  "imageAlt": "Molino Picador De Verduras",
+  "image": "https://firebasestorage.googleapis.com/v0/b/mi-catalogo-1f031.appspot.com/o/variedades_tv_cali-31jp1b1rg6w-4etiujii57q.png?alt=media&token=00cc9a94-0190-441a-9561-16c5cfe34edb"
+}

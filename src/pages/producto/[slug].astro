@@ -49,10 +49,10 @@ const formatter = new Intl.NumberFormat(siteConfig.locale, {
         <h1 class="mt-2 text-3xl font-extrabold text-ink-900 sm:text-4xl">{data.name}</h1>
 
         <div class="mt-4 flex items-baseline gap-3">
-          <span class="text-2xl font-bold text-ink-900">{formatter.format(data.price)}</span>
+          <span class="text-2xl font-bold text-ink-900">{formatter.format(data.salePrice ?? data.price)}</span>
           {
-            data.compareAtPrice && (
-              <span class="text-lg text-ink-700 line-through">{formatter.format(data.compareAtPrice)}</span>
+            data.salePrice && (
+              <span class="text-lg text-ink-700 line-through">{formatter.format(data.price)}</span>
             )
           }
         </div>
@@ -78,7 +78,7 @@ const formatter = new Intl.NumberFormat(siteConfig.locale, {
           </p>
           <AddToCartButton
             client:load
-            product={{ slug: product.id, name: data.name, price: data.price, image: data.image, inStock: data.inStock }}
+            product={{ slug: product.id, name: data.name, price: data.price, image: data.image, inStock: data.inStock, salePrice: data.salePrice }}
             variant="full"
           />
         </div>
@@ -95,11 +95,12 @@ const formatter = new Intl.NumberFormat(siteConfig.locale, {
                 slug={p.id}
                 name={p.data.name}
                 price={p.data.price}
-                compareAtPrice={p.data.compareAtPrice}
+                salePrice={p.data.salePrice}
                 image={p.data.image}
                 imageAlt={p.data.imageAlt}
                 category={p.data.category}
                 inStock={p.data.inStock}
+                weeklyDeal={p.data.weeklyDeal}
               />
             ))}
           </div>

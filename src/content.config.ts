@@ -6,7 +6,7 @@ const products = defineCollection({
   schema: z.object({
     name: z.string(),
     price: z.number().positive(),
-    compareAtPrice: z.number().positive().optional(),
+    salePrice: z.number().positive().optional().nullable(),
     description: z.string(),
     category: z.string(),
     // Ruta de imagen: por defecto usamos un placeholder.
@@ -20,6 +20,7 @@ const products = defineCollection({
     imageAlt: z.string().optional(),
     featured: z.boolean().default(false),
     inStock: z.boolean().default(true),
+    weeklyDeal: z.boolean().default(true),
   }),
 });
 

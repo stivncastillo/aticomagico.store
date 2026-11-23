@@ -10,11 +10,12 @@ const products = allProducts.map((p) => ({
   slug: p.id,
   name: p.data.name,
   price: p.data.price,
-  compareAtPrice: p.data.compareAtPrice,
+  salePrice: p.data.salePrice,
   image: p.data.image,
   imageAlt: p.data.imageAlt,
   category: p.data.category,
   inStock: p.data.inStock,
+  weeklyDeal: p.data.weeklyDeal
 }));
 ---
 

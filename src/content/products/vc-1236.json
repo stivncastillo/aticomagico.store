@@ -1,0 +1,13 @@
+{
+  "name": "Hervidor De Agua",
+  "price": 30000,
+  "salePrice": null,
+  "discountPercentage": null,
+  "category": "Cocina",
+  "description": "Hervidor de agua plegable. Perfecto para ahorrar en casa.",
+  "featured": false,
+  "weeklyDeal": false,
+  "inStock": true,
+  "imageAlt": "Hervidor De Agua",
+  "image": "https://firebasestorage.googleapis.com/v0/b/mi-catalogo-1f031.appspot.com/o/variedades_tv_cali-ilveca8zlt-bhdovglkso5.png?alt=media&token=cfbf4c32-42a8-4022-9625-37525ad562e6"
+}

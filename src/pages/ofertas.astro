@@ -1,0 +1,63 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import ProductCard from "@/components/ProductCard.astro";
+import { siteConfig } from "@/lib/config";
+import { getDiscountPercent } from "@/lib/product";
+
+const MAX_OFERTAS = 16;
+
+const allProducts = await getCollection("products");
+
+// Ofertas de la semana: productos marcados weeklyDeal=true en el Excel que
+// ademas tienen un descuento real (salePrice < price), ordenados de mayor a
+// menor porcentaje de descuento. No se rellena con productos sin descuento
+// si hay menos de 16 - se muestran los que haya.
+const ofertas = allProducts
+  .filter((p) => p.data.weeklyDeal && getDiscountPercent(p.data.price, p.data.salePrice ?? null) > 0)
+  .sort(
+    (a, b) =>
+      getDiscountPercent(b.data.price, b.data.salePrice ?? null) -
+      getDiscountPercent(a.data.price, a.data.salePrice ?? null)
+  )
+  .slice(0, MAX_OFERTAS);
+---
+
+<Layout
+  title="Ofertas de la Semana"
+  description={`Los productos con descuento de esta semana en ${siteConfig.name}.`}
+>
+  <section class="container-page py-12 sm:py-16">
+    <h1 class="text-3xl font-extrabold text-ink-900 sm:text-4xl">Ofertas de la Semana</h1>
+    <p class="mt-3 max-w-2xl text-ink-700">
+      Cada semana escogemos un grupo de productos y les bajamos el precio por unos días. La
+      selección cambia constantemente, así que lo que ves hoy puede no estar la próxima semana —
+      seguinos en la página y en Instagram para no perderte las ofertas nuevas.
+    </p>
+
+    {
+      ofertas.length > 0 ? (
+        <div class="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 lg:grid-cols-4">
+          {ofertas.map((product) => (
+            <ProductCard
+              slug={product.id}
+              name={product.data.name}
+              price={product.data.price}
+              salePrice={product.data.salePrice}
+              image={product.data.image}
+              imageAlt={product.data.imageAlt}
+              category={product.data.category}
+              inStock={product.data.inStock}
+              weeklyDeal={product.data.weeklyDeal}
+            />
+          ))}
+        </div>
+      ) : (
+        <p class="mt-10 text-center text-ink-700">
+          Por ahora no hay ofertas activas. Volvé pronto — cada semana armamos una selección
+          nueva.
+        </p>
+      )
+    }
+  </section>
+</Layout>
