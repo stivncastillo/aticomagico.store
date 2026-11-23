@@ -46,3 +46,49 @@ body {
 .card {
   @apply rounded-2xl border border-black/5 bg-white shadow-sm transition hover:shadow-md;
 }
+
+/* Animaciones del carousel del hero (texto, botones e imagen al cambiar de
+   slide). Se activan con un `key` distinto en React, que remonta el nodo y
+   reinicia la animacion cada vez. Respetan prefers-reduced-motion. */
+@keyframes hero-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-fade-scale {
+  from {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-hero-text {
+  animation: hero-fade-up 0.55s ease-out both;
+}
+
+.animate-hero-cta {
+  animation: hero-fade-up 0.55s ease-out both;
+  animation-delay: 0.08s;
+}
+
+.animate-hero-image {
+  animation: hero-fade-scale 0.7s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-hero-text,
+  .animate-hero-cta,
+  .animate-hero-image {
+    animation: none;
+  }
+}
